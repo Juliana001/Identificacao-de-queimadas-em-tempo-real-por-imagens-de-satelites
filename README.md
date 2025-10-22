@@ -1,4 +1,4 @@
-# Monitoramento de Queimadas no Cerrado com Satélites
+# Monitoramento de Queimadas no Cerrado via Satélites 
 
 ## Objetivo
 Detectar e monitorar queimadas em tempo quase real na região de Goiânia usando dados MODIS/VIIRS e Google Earth Engine.
