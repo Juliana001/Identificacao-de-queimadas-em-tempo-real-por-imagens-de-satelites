@@ -4,7 +4,7 @@
 Detectar e monitorar queimadas em tempo quase real na região de Goiânia usando dados MODIS/VIIRS e Google Earth Engine.
 
 ## Área de Estudo
-Cerrado Goiânia + municípios vizinhos (GeoJSON na pasta /data/external).
+Cerrado Goiânia + municípios vizinhos (GeoJSON - NETCDF - GEOTIFF).
 
 ## Sensores que poderão ser utilizados, a depender da disponibilidade dos dados
 - MODIS (Terra/Aqua)
