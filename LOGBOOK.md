@@ -21,3 +21,11 @@ Encontrei um artigo sobre fazer uma super resolução das bandas do goes19 usand
 
 13/11/2025
 Como foi proposto no plano de trabalho, é chegada a hora de montar o dataset. O dataset será pré-processado com o pan sharpening, que é uma técnica utilizada para aumentar a resolução de uma imagem com base em uma imagem de maior resolução. Aumentarei a resolução das bandas 7(2km) e 14(2km) com base na banda 2(0,5km) uma vez que foi identificado no relatório do estado da arte que essas são as bandas de maior interesse na detecção e monitoramento de incêndios. O formato do dataset ainda não foi definido, mas vai ter que ser no mesmo formato dos arquivos que serão processados em tempo real no produto final da presente pesquisa.
+
+15/11/2025
+Com o relatório de estado da arte pronto, podemos seguir para a montagem do dataset
+
+Previsão 17/11 - 21/11
+Pegar um netcdf que é certeza de ter incêndio e transformar em um csv
+Fazer um pan sharpening em um netcdf de fogo e comparar o antes e depois da resolução dando um zoom em uma região específica (goiânia e regiâo em um raio de 300km)
+Se tudo der certo, montar o dataset (ainda não foi decidido quantos netcdf comporão o dataset)
