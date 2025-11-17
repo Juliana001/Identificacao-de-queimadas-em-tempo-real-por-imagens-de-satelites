@@ -26,6 +26,5 @@ Como foi proposto no plano de trabalho, é chegada a hora de montar o dataset. O
 Com o relatório de estado da arte pronto, podemos seguir para a montagem do dataset
 
 Previsão 17/11 - 21/11
-- Pegar um netcdf que é certeza de ter incêndio e transformar em um csv
 - Fazer um pan sharpening em um netcdf de fogo e comparar o antes e depois da resolução dando um zoom em uma região específica (goiânia e regiâo em um raio de 300km)
 - Se tudo der certo, montar o dataset (ainda não foi decidido quantos netcdf comporão o dataset)
