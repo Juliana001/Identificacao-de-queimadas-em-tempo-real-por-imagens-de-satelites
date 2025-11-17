@@ -27,5 +27,6 @@ Com o relatório de estado da arte pronto, podemos seguir para a montagem do dat
 
 Previsão 17/11 - 21/11
 - Fazer um pan sharpening em um netcdf de fogo e comparar o antes e depois da resolução dando um zoom em uma região específica (goiânia e regiâo em um raio de 300km)
+  Abaixo segue o primeiro resultado de pan sharpening da banda 7(2km) pela banda 2(500m). Foi em um dia de incêndio, mas não indentifiquei que região é essa. Mas pelo menos funcionou. Agora é fazer para a região de Goiás e montar o dataset logo em seguida. (cmap='inferno' pois é melhor para identificar calor) 
   ![Apresentacao](https://drive.google.com/uc?export=view&id=1ovQSPPD10mo2Ok2kSivPCPw_CHDWg22A)
 - Se tudo der certo, montar o dataset (ainda não foi decidido quantos netcdf comporão o dataset)
