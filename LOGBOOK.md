@@ -35,3 +35,5 @@ Consegui encotrar o estado de Goiás fazendo as marcações dos estados no netcd
   próximos passos: encontrar o estado de Goiás na imagem com pan-sharpening e validar como ele funciona em focos de incêndio. O esperado é que ele realmente tenha aumentado a resolução espacial do netcdf.
   O aumento da resolução dos netcdfs é crucial não só para a detecção dos incêndios em si, mas também para o monitoramento dos incêndios.
   ![Apresentacao](https://drive.google.com/uc?export=view&id=1bzMV1hNZYThMzbFahlWzwT7UyWeYFgB0)
+
+  O PCA, da forma que foi calculado, perdeu o georreferenciamento. Será necessário encontrar outra forma de calcular o pca sem perder os dados espectrais, nem o georreferenciamento.
