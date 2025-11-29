@@ -49,3 +49,25 @@ Consegui encotrar o estado de Goiás fazendo as marcações dos estados no netcd
   - ser de rápido processamento, uma vez que utilzaremos essa tecnica no produto final para fazer um pre-processamento nos arquivos antes de serem injetados na rede neural para detectar e monitorar incêndios.
  
   O principal motivo que faz com que o aumento da resolução seja indispensável é a necessidade de conseguir detectar incêndios no inicío, ou próximo disso, para que assim eles tenham menores proporções e também para auxiliar no monitoramento do incêndio, uma vez que se conseguirmos prever para onde o incêndio vai, com uma resolução espacial de 500m, teremos muito mais sucesso na contenção do fogo, do que se fizermos esse monitoramento com uma resolução espacial de 2km.
+
+Encontrei a técnica super-resolução por interpolação bilinear
+  ela gasta uma quantidade considerável de memória RAM, mas ainda dentro do suportado pelo Colab.
+
+  O resultado encontrado é mostrado abaixo pegando a mesma fatia da imagem. Podemos ver que teve sim um aumento na resolução.
+   ![Apresentacao](https://drive.google.com/uc?export=view&id=1xpdnTLuLpqnVnKm87R0nm9pKCAMSWnLT)
+  Essa técnica:
+  -  aumenta a resolução espacial
+  -  preserva o georreferenciamento
+  -  em teoria preserva as características espectrais, uma vez que tudo é feito em cima de só uma banda (ainda precisa ser provado)
+
+Com isso, os próximos passos são: plotar o estado de Goiás e validar com um plot de da banda original também do estado de Goiás.
+
+Caso ela não tenha preservado as características espectrais, buscarei outra técnica, mas ao que tudo indica essa técnica atendeu todas as necessidades.
+
+Se ela estiver ok, logo disponibilizarei o código tanto de puxar os dados do GOES19, quanto o de aplicar a técnica de super resolução por interpolação bilinear.
+    
+    
+
+
+
+
