@@ -65,6 +65,9 @@ Com isso, os próximos passos são: plotar o estado de Goiás e validar com um p
 Caso ela não tenha preservado as características espectrais, buscarei outra técnica, mas ao que tudo indica essa técnica atendeu todas as necessidades.
 
 Se ela estiver ok, logo disponibilizarei o código tanto de puxar os dados do GOES19, quanto o de aplicar a técnica de super resolução por interpolação bilinear.
+
+Como a nova resolução foi para 1,33km, vou tentar aumentar para pelo menos 1km, se não der certo, vamos seguir com a resolução de 1,33km, pois ela ainda é melhor que 2km. 
+O principal motivo para usarmos o ABI do GOES19 e não qualquer outro satélite com reolução maior é a resolução temporal, também conhecida como taxa de revista: enquanto a do GOES19 é de aproximadamente 10 em 10 minutos, satélites como o Sentinel ultrapassa os 10 dias. A resolução de a cada 10 dias impossibilita o monitoramento de incêndios.
     
     
 
