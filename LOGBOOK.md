@@ -38,4 +38,14 @@ Consegui encotrar o estado de Goiás fazendo as marcações dos estados no netcd
 
   O PCA, da forma que foi calculado, perdeu o georreferenciamento. Será necessário encontrar outra forma de calcular o pca sem perder os dados espectrais, nem o georreferenciamento.
 
-  A biblioteca numpy está dando conflito de versão com as outras bibliotecas utilizadas para o pan sharpening. 
+  A biblioteca numpy está dando conflito de versão com as outras bibliotecas utilizadas para o pan sharpening.
+
+  1/12- 5/12
+
+  Com os resucrsos computacionais disponíveis, não será possível realizar o pan sharpening para aumnetar a resolução espacial da banda 7, uma vez que o método que consome menos memória ram é o Brovey, que é um método que não preserva as características espectrais. O ideal seria utilizar o PCA, mas ele consome muito ram (a ram disponível é de 12.7 GB do colab), então paralizaremos o pan sharpening e buscaremos outras técnicas que satisfaçam as seguintes necessidades:
+  - aumentar a resolução espacial
+  - preservar as características espectrais da(s) banda(s) necessária(s)
+  - preservar o georregferenciamento
+  - ser de rápido processamento, uma vez que utilzaremos essa tecnica no produto final para fazer um pre-processamento nos arquivos antes de serem injetados na rede neural para detectar e monitorar incêndios.
+ 
+  O principal motivo que faz com que o aumento da resolução seja indispensável é a necessidade de conseguir detectar incêndios no inicío, ou próximo disso, para que assim eles tenham menores proporções e também para auxiliar no monitoramento do incêndio, uma vez que se conseguirmos prever para onde o incêndio vai, com uma resolução espacial de 500m, teremos muito mais sucesso na contenção do fogo, do que se fizermos esse monitoramento com uma resolução espacial de 2km.
