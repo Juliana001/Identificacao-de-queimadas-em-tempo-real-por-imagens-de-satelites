@@ -72,10 +72,9 @@ globo todo
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1rVwRDlmFhzqzFcz13dGr-nVv4xXOw41n)
 Goiás com super resolução e sem super resolução
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1Up1fD6vepOOil8bWZxn7d7-YUVzRoIjp)
-goias 2
+Goiás sem super resolução (banda 7)
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1rF_6tH-U6AchhPe48LsHxQtfogc4EpWT)
-
-goias
+Goiás com super resolução (banda 7)
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1GhJ61_uaYIkPhL43UlaUo513RL4IrvVc)
 ram 1
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1Scf54irW94mdI5zNkz7OH-V4Ys-OGbjF)
