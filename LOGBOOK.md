@@ -76,11 +76,11 @@ Goiás sem super resolução (banda 7)
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1rF_6tH-U6AchhPe48LsHxQtfogc4EpWT)
 Goiás com super resolução (banda 7)
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1GhJ61_uaYIkPhL43UlaUo513RL4IrvVc)
-ram 1
+RAM gasta para plotar o globo (todos os dados da banda 7)
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1Scf54irW94mdI5zNkz7OH-V4Ys-OGbjF)
-ram 2
+RAM gasta para plotar os dados da banda 7 de Goiás com super resolução
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1QwAt6DWvi2qFSVTg5ohWMvOT-hiruWXx)
-ram 3
+RAM gasta para plotar a imagem com super resolução e sem super resolução
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1i9Bf8f0B0DPuwxhOiZo8KiitTTP5RSkz)
     
     
