@@ -70,7 +70,7 @@ Como a nova resolução foi para 1,33km, vou tentar aumentar para pelo menos 1km
 O principal motivo para usarmos o ABI do GOES19 e não qualquer outro satélite com reolução maior é a resolução temporal, também conhecida como taxa de revista: enquanto a do GOES19 é de aproximadamente 10 em 10 minutos, satélites como o Sentinel ultrapassa os 10 dias. A resolução de a cada 10 dias impossibilita o monitoramento de incêndios.
 globo todo
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1rVwRDlmFhzqzFcz13dGr-nVv4xXOw41n)
-goiás 1
+Goiás com super resolução e sem super resolução
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1Up1fD6vepOOil8bWZxn7d7-YUVzRoIjp)
 goias 2
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1rF_6tH-U6AchhPe48LsHxQtfogc4EpWT)
