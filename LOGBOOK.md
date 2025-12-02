@@ -68,12 +68,16 @@ Se ela estiver ok, logo disponibilizarei o código tanto de puxar os dados do GO
 
 Como a nova resolução foi para 1,33km, vou tentar aumentar para pelo menos 1km, se não der certo, vamos seguir com a resolução de 1,33km, pois ela ainda é melhor que 2km. 
 O principal motivo para usarmos o ABI do GOES19 e não qualquer outro satélite com reolução maior é a resolução temporal, também conhecida como taxa de revista: enquanto a do GOES19 é de aproximadamente 10 em 10 minutos, satélites como o Sentinel ultrapassa os 10 dias. A resolução de a cada 10 dias impossibilita o monitoramento de incêndios.
-globo todo
+Globo todo
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1rVwRDlmFhzqzFcz13dGr-nVv4xXOw41n)
+
 Goiás com super resolução e sem super resolução
+Com a super resolução é possível ver que a iamgem fica um pouco mais nitida (a resolução espacial caiu de 2km para 1.33km), preservando os dados espectrais e o georreferenicamento. O próximo passo será dar um super zoom para ver o comportamento dos pixels mais de perto para saber se realmente almentou a resolução. Visivelmente aumentou, mas precisamos provar.
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1Up1fD6vepOOil8bWZxn7d7-YUVzRoIjp)
+
 Goiás sem super resolução (banda 7)
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1rF_6tH-U6AchhPe48LsHxQtfogc4EpWT)
+
 Goiás com super resolução (banda 7)
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1GhJ61_uaYIkPhL43UlaUo513RL4IrvVc)
 
@@ -91,6 +95,8 @@ RAM gasta para plotar os dados da banda 7 de Goiás com super resolução
 RAM gasta para plotar a imagem com super resolução e sem super resolução
 
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1i9Bf8f0B0DPuwxhOiZo8KiitTTP5RSkz)
+
+Com os dados da RAM podemos perceber que esse é um processo muito caro computacionalmente, mas sem ele se torna inviável o procedimento da pesquisa de detecção e monitoramento de incênidos. Sendo assim, fica justificado o motivo de despender mais tempo para a confecção do dataset. O ideal seria que a resolução caisse abaixo de 1km e tentarei alcançar essa resolução, mas na inviabilidade deste objetivo, seguiremos com 1.33km de resolução.
     
     
 
