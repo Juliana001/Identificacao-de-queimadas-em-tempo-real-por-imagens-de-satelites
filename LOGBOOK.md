@@ -117,7 +117,7 @@ Os satélites mais promissores são:
 Nada impede uma possível combinação dos 3 satélites para um produto final, tudo vai depender da forma de obter os dados. Uma das vantgens do GOES19 é que é muito fácil puxar dados dele, os dados são abertos. Fora do Brasil, muitas pesquisas que li enquanto montava o estado da arte utilizava os satélites Himawari, só que o campo de visão dele é oriental: Asia e Ocenaia. As resoluções dele são bem parecidas com as do GOES, mas praticamente todos os trabalhos analisados eram patrocinados de modo que os pesquisadores tinham boas GPUs para todo o processamento de rede neural para aumentar a resolução das bandas espectrais. 
        
 
-    
+O maior problema de utilizar o VIIRS é a continuidade do sistema para além do que será entregue no relatório final, uma vez que acessar os dados do VIIRS é muito complicado via API, para não dizer impossível. Para acessar os dados é necessário uma conta, não é possível automatizar de forma que ele fique puxando os dados todos os dias igual seria possível no GOES. A depender de como a pesquisa seguir, não descarto a possibilidade de criar um modelo de algoritmo de detecção, instruindo sobre o que fazer com cada banda (comprimento de onda) e quando surgir um satélite de maior resolução apontado para o Brasil, apenas fazer a troca de qual satélite será usado.
     
 
 
