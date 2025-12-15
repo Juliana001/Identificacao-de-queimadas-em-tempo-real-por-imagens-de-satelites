@@ -118,7 +118,8 @@ Nada impede uma possível combinação dos 3 satélites para um produto final, t
        
 
 O maior problema de utilizar o VIIRS é a continuidade do sistema para além do que será entregue no relatório final, uma vez que acessar os dados do VIIRS é muito complicado via API, para não dizer impossível. Para acessar os dados é necessário uma conta, não é possível automatizar de forma que ele fique puxando os dados todos os dias igual seria possível no GOES. A depender de como a pesquisa seguir, não descarto a possibilidade de criar um modelo de algoritmo de detecção, instruindo sobre o que fazer com cada banda (comprimento de onda) e quando surgir um satélite de maior resolução apontado para o Brasil, apenas fazer a troca de qual satélite será usado.
-    
+
+Em questão de visão de futuro, o MODIS não é uma boa escolha, visto que ele tem previsão de descomissionamento para o final de 2026 início de 2027, enquanto que o GOES19 é para depois de 2030 e o VIIRS depois de 2040.
 
 
 
