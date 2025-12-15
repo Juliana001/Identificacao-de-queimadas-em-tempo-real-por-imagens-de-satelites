@@ -122,5 +122,7 @@ O maior problema de utilizar o VIIRS é a continuidade do sistema para além do 
 Em questão de visão de futuro, o MODIS não é uma boa escolha, visto que ele tem previsão de descomissionamento para o final de 2026 início de 2027, enquanto que o GOES19 é para depois de 2030 e o VIIRS depois de 2040.
 
 
+Outro fator que vai de encontro à nossa necessidade é o tamanho dos arquivos VIIRS. O VIIRS possui produtos de resolução de até 375m, o que faz com que os arquivos sejam extremamente pesados, se para alguns processamentos básicos do GOES foi possível atingir mais de 30gb de RAM, o VIIRS ultrapassaria com muita facilidade esse marco. Sendo assim, por enquanto o GOES ainda é a melhor opção.
+
 
 
