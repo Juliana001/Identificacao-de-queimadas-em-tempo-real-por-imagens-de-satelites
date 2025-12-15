@@ -97,6 +97,26 @@ RAM gasta para plotar a imagem com super resolução e sem super resolução
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1i9Bf8f0B0DPuwxhOiZo8KiitTTP5RSkz)
 
 Com os dados da RAM podemos perceber que esse é um processo muito caro computacionalmente, mas sem ele se torna inviável o procedimento da pesquisa de detecção e monitoramento de incênidos. Sendo assim, fica justificado o motivo de despender mais tempo para a confecção do dataset. O ideal seria que a resolução caisse abaixo de 1km e tentarei alcançar essa resolução, mas na inviabilidade deste objetivo, seguiremos com 1.33km de resolução.
+
+A Super Resolução por interpolação bilinear se mostrou ineficiente, quando comparada com imagens do dsat, que também usa os dados do GOES19. A interpolação aumentou, de fato, o número de pixels, mas perdeu os dados que já tinha. 
+
+Agora entramos em um dilema: abrir mão do monitoramento de incêndios para preservar a detecção, ou desconsiderar a detecção de incêndios no início priorizando o monitoramento? Mas se pararmos para pensar, se priorizarmos o monitoramento, até ele será prejudicado, uma vez que a resolução é de 2km. Sendo assim, pela continuidade da pesquisa buscaremos outro satélite que tenha uma resolução maior, pelo menos uma vez por dia ou a cada dois dias e usaremos uma combinação de bandas do GOES19 apenas para auxiliar na previsão de para onde os incêndios detectador podem ir. Todo o conjunto de redes neurais (precisaremos usar mais de uma, especializando cada uma em sua respectiva função) será arquitetado como uma cadeia de Markov.
+
+Os satélites mais promissores são:
+
+* VIIRS – Suomi-NPP e NOAA-20
+  * Resolução espacial: 375 m (bandas I)
+  * Resolução temporal: 1–2 passagens por dia
+  * Cobertura no Brasil: excelente
+    
+* MODIS – Terra e Aqua
+  * Resolução espacial: 1 km
+  * Resolução temporal: 2 passagens/dia
+  * Cobertura: total do Brasil
+ 
+Nada impede uma possível combinação dos 3 satélites para um produto final, tudo vai depender da forma de obter os dados. Uma das vantgens do GOES19 é que é muito fácil puxar dados dele, os dados são abertos. Fora do Brasil, muitas pesquisas que li enquanto montava o estado da arte utilizava os satélites Himawari, só que o campo de visão dele é oriental: Asia e Ocenaia. As resoluções dele são bem parecidas com as do GOES, mas praticamente todos os trabalhos analisados eram patrocinados de modo que os pesquisadores tinham boas GPUs para todo o processamento de rede neural para aumentar a resolução das bandas espectrais. 
+       
+
     
     
 
