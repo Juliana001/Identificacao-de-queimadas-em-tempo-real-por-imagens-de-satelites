@@ -122,6 +122,12 @@ O maior problema de utilizar o VIIRS é a continuidade do sistema para além do 
 Em questão de visão de futuro, o MODIS não é uma boa escolha, visto que ele tem previsão de descomissionamento para o final de 2026 início de 2027, enquanto que o GOES19 é para depois de 2030 e o VIIRS depois de 2040.
 
 
+Fiz uma nova tentativa de aumentar a resolução usando transformada de Wavelet, mas não funcionou. Seguindo os passos de várias outras pesquisas que analisei enquanto fazia o relatorio de estado da arte, vou seguir com os 2km mesmo. Vou priorizar a técnica e a escalabilidade. Quando surgir um novo satélite com outros sensores melhores, conseguiremos alterar.
+
+O desafio agora é montar o dataset. Os arquivos, mesmo tendo resolução de 2km, ainda não enormes. Montar um dataset com umas 10 mil imagens, deve ultrapassar com muita facilidade os 100gb de memória.
+
+Mas o próximo passo é: montar o dataset.
+
 Outro fator que vai de encontro à nossa necessidade é o tamanho dos arquivos VIIRS. O VIIRS possui produtos de resolução de até 375m, o que faz com que os arquivos sejam extremamente pesados, se para alguns processamentos básicos do GOES foi possível atingir mais de 30gb de RAM, o VIIRS ultrapassaria com muita facilidade esse marco. Sendo assim, por enquanto o GOES ainda é a melhor opção.
 
 
