@@ -130,5 +130,9 @@ Mas o próximo passo é: montar o dataset.
 
 Outro fator que vai de encontro à nossa necessidade é o tamanho dos arquivos VIIRS. O VIIRS possui produtos de resolução de até 375m, o que faz com que os arquivos sejam extremamente pesados, se para alguns processamentos básicos do GOES foi possível atingir mais de 30gb de RAM, o VIIRS ultrapassaria com muita facilidade esse marco. Sendo assim, por enquanto o GOES ainda é a melhor opção.
 
+A parte da montagem do dataset se dará em duas etapas:
+1- validação de quais bandas serão úteis para a detecção (por enquanto não vamos trabalhar com detecção e monitoramento, vamos usar a estratégia dividir para conquistar).
+2- montagem do dataset com aproximadamente 1000 netcdfs. Esse número pode parecer pouco, mas é o máximo que conseguimos gerir, uma vez que não temos meios de hospedar tantos netcdfs.
+
 
 
