@@ -138,4 +138,6 @@ Uma possível solução para o armazenamento dos netcdfs é o Zenodo. Como ele t
 
 Quantos as bandas que comporão o dataset: a banda 7 é muito importante, mas diversas pesquisas que li apontaram que a utilização apenas da banda 7 trouxe mais falsos positivos do que verdadeiros positivos, assim, comporemos nosso dataset com mais bnadas, inclusive dados climáticos, que se mostraram importante em diversas pesquisas.
 
+Para fins de entender o comportamento das bandas em incêndios, vou puxar um netcdf de um dia de incêndio e plotar em todas bandas.
+
 
