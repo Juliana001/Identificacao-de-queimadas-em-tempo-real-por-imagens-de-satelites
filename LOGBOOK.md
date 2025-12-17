@@ -134,5 +134,7 @@ A parte da montagem do dataset se dará em duas etapas:
 1- validação de quais bandas serão úteis para a detecção (por enquanto não vamos trabalhar com detecção e monitoramento, vamos usar a estratégia dividir para conquistar).
 2- montagem do dataset com aproximadamente 1000 netcdfs. Esse número pode parecer pouco, mas é o máximo que conseguimos gerir, uma vez que não temos meios de hospedar tantos netcdfs.
 
+Uma possível solução para o armazenamento dos netcdfs é o Zenodo. Como ele tem um limite de 50Gb, acredito que ele consiga guardar os netcdfs. Agora, precisamos descobrir se tem como automatizar o processo de colocar os dados, ou se será necessário colocar na minha máquina para depois fazer o upload no zenodo.
+
 
 
