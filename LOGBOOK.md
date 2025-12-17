@@ -136,5 +136,6 @@ A parte da montagem do dataset se dará em duas etapas:
 
 Uma possível solução para o armazenamento dos netcdfs é o Zenodo. Como ele tem um limite de 50Gb, acredito que ele consiga guardar os netcdfs. Agora, precisamos descobrir se tem como automatizar o processo de colocar os dados, ou se será necessário colocar na minha máquina para depois fazer o upload no zenodo.
 
+Quantos as bandas que comporão o dataset: a banda 7 é muito importante, mas diversas pesquisas que li apontaram que a utilização apenas da banda 7 trouxe mais falsos positivos do que verdadeiros positivos, assim, comporemos nosso dataset com mais bnadas, inclusive dados climáticos, que se mostraram importante em diversas pesquisas.
 
 
