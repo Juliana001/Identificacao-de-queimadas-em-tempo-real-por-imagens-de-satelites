@@ -142,3 +142,6 @@ Para fins de entender o comportamento das bandas em incêndios, vou puxar um net
 Vou tentar plotar as bandas capturadas no dia 04/10/2025, pois nesse dia houve incêndio em Goiás, mais especificamente na Chapada dos Veadeiros.
 
 Muito embora ainda seja preliminar, mas é válido contar que das bandas analisadas, a banda 5 teve um excelente desempenho, podendo ser uma das que comporão o dataset. É válido destacar que, por mais que algumas bandas como a 7 e a 15 sejam muito utilizadas para a detecção de incêndios ao redor do mundo, quando falamos de Cerrado, essa aplicação pode ter muitas limitações, uma vez que o Cerrado é um dos hotspots do mundo, ou seja, é um lugar quente. Se o Cerrado por si só já apresenta altas temperaturas em condições normais, a utilização única e exclusiva dessas bandas pode ser prejudicial para a acurácia do modelo. 
+
+Vou começar fazendo uma composição das bandas 5, 6 e 7.
+O primeiro passo vai ser olhar qual é o DQF (Data Quality Flag) das bandas.
