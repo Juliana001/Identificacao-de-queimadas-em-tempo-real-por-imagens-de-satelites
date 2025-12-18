@@ -150,6 +150,9 @@ A imagem abaixo foi retirada do BDQueimadas, do dia 25/09/2025. Todos os pontos 
 
   Analisando a banda 7:
     ![Apresentacao](https://drive.google.com/uc?export=view&id=1M0_CMC-v5liHtghjqXHfnPT0L2EtSk91)
+    
+Analisando a banda 14:
+  ![Apresentacao](https://drive.google.com/uc?export=view&id=1IDSNjqP_rXyPVHcjEjwgl7YLiTgh2raA)
 
 
 
