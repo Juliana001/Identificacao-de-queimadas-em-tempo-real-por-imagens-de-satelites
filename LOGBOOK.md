@@ -148,11 +148,14 @@ Vou começar fazendo uma composição das bandas.
 A imagem abaixo foi retirada do BDQueimadas, do dia 25/09/2025. Todos os pontos vermelhos são incêndios.
   ![Apresentacao](https://drive.google.com/uc?export=view&id=18vChJpqOrVR2dZv6wRC_lmY2n0XktAtu)
 
-  Analisando a banda 7:
+ Banda 7:
     ![Apresentacao](https://drive.google.com/uc?export=view&id=1M0_CMC-v5liHtghjqXHfnPT0L2EtSk91)
     
-Analisando a banda 14:
+Banda 14:
   ![Apresentacao](https://drive.google.com/uc?export=view&id=1IDSNjqP_rXyPVHcjEjwgl7YLiTgh2raA)
 
+Ambas as bandas tiveram um comportamento parecido com o dos dados oficiais do BDQueimadas, com excessão para a região norte, que nenhuma das bandas captou incêndios, mas na reigião central e nordeste foram captados de forma bem parecida com o real. Como o objetivo da pesquisa está em detectar incêndios no cerrado goiano, as bandas se mostraram úteis. Faltam as bandas 15, 5 e 6 para análise. 
+
+Acho que para esse problema não faremos uma composição de bandas e sim um algoritmo que funcione como um funil: começa por uma banda que pode haver falsos positivos até chegar em uma que (pode ser uma composição) tenha os falsos positivos e falsos negativos tendendo a zero.
 
 
