@@ -1,4 +1,4 @@
-![Apresentacao](https://drive.google.com/uc?export=view&id=1dgaZxOTABLlnarfL1T8NC7W_k7DwoL79)
+![Apresentacao](https://drive.google.com/uc?export=view&id=1WY-Wzyn7lpfuWPc1-qQ0-Uln5Z-iDZJ_)
 
 # Monitoramento de Queimadas no Cerrado via Satélites 
 
