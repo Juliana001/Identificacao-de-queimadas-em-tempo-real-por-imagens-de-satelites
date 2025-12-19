@@ -160,3 +160,15 @@ Acho que para esse problema não faremos uma composição de bandas e sim um alg
 
 Antes de continuarmos o desenvolvimento do dataset precisamos primeiro responder à perqunta: o que é o fogo espectralmente falando?
 Precisamos definir não só o que é o fogo, mas também o que é o fogo em um ambiente naturalmente muito quente.
+
+#Assinatura espectral do fogo
+
+O Delta BT (Diferença de Temperatura de Brilho) entre as bandas do infravermelho médio (MIR ~3.9 µm) e térmico (TIR ~11 µm) explora uma propriedade fundamental da física da radiação: a Lei do Deslocamento de Wien. Esta lei estabelece que o comprimento de onda de emissão máxima de um corpo negro é inversamente proporcional à sua temperatura.
+
+Para incêndios ativos (600-1200 K), o pico de emissão ocorre entre 2.4-4.8 µm, exatamente na região espectral da banda 7 do GOES (3.9 µm). Em contraste, superfícies terrestres típicas (280-320 K) emitem predominantemente na região de 9-12 µm (banda 14).
+
+Superfícies quentes como desertos, telhados metálicos ou solo exposto podem apresentar temperaturas elevadas na banda 7. No entanto, essas superfícies aquecem de forma relativamente uniforme em ambas as bandas, resultando em um Delta BT pequeno (tipicamente < 5-8K). Um incêndio ativo, com chamas e brasas, apresenta uma diferença muito maior (10-50K ou mais) devido à emissão seletiva no MIR.
+
+ ![Apresentacao](https://drive.google.com/uc?export=view&id=1QsE8b0AZsorJyr3hNIDCI7lCKtum_KdA)
+
+Anteriormente havia comentado que foi possível detectar grande parte dos incêndios detectados pelo DBQueimadas, exceto os da região amazônica. Acho que isso aconteceu devido a quantidade e concentração de nuvens da região.
