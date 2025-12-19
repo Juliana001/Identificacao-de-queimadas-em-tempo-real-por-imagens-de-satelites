@@ -158,4 +158,5 @@ Ambas as bandas tiveram um comportamento parecido com o dos dados oficiais do BD
 
 Acho que para esse problema não faremos uma composição de bandas e sim um algoritmo que funcione como um funil: começa por uma banda que pode haver falsos positivos até chegar em uma que (pode ser uma composição) tenha os falsos positivos e falsos negativos tendendo a zero.
 
-
+Antes de continuarmos o desenvolvimento do dataset precisamos primeiro responder à perqunta: o que é o fogo espectralmente falando?
+Precisamos definir não só o que é o fogo, mas também o que é o fogo em um ambiente naturalmente muito quente.
