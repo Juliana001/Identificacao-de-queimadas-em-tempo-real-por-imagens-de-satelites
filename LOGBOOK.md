@@ -172,5 +172,5 @@ Superfícies quentes como desertos, telhados metálicos ou solo exposto podem ap
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1QsE8b0AZsorJyr3hNIDCI7lCKtum_KdA)
 
 Anteriormente havia comentado que foi possível detectar grande parte dos incêndios detectados pelo DBQueimadas, exceto os da região amazônica. Acho que isso aconteceu devido a quantidade e concentração de nuvens da região.
-O $\Delta$ BT é útil na detecção de incêndios, mas não consegue detectar incêndios abaixo de nuvens densas, esse será um novo problema que teremos que resolver. Nuvens do tipo cumulonimbo, estrato espesso ou nimbostratus são efetivamente corpos opacos nas bandas do infravermelho termal (3.9 µm e 11 µm). A radiação emitida por qualquer fonte abaixo da nuvem não consegue atravessar a camada de gotículas/partículas de gelo para atingir o sensor do satélite.
+O $\Delta$BT é útil na detecção de incêndios, mas não consegue detectar incêndios abaixo de nuvens densas, esse será um novo problema que teremos que resolver. Nuvens do tipo cumulonimbo, estrato espesso ou nimbostratus são efetivamente corpos opacos nas bandas do infravermelho termal (3.9 µm e 11 µm). A radiação emitida por qualquer fonte abaixo da nuvem não consegue atravessar a camada de gotículas/partículas de gelo para atingir o sensor do satélite.
 
