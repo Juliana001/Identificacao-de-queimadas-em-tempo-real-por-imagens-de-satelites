@@ -171,6 +171,14 @@ Superfícies quentes como desertos, telhados metálicos ou solo exposto podem ap
 
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1QsE8b0AZsorJyr3hNIDCI7lCKtum_KdA)
 
+Foi possível extrair as seguintes informações:
+* ΔBT máximo nos hotspots: 75.77 K
+* ΔBT médio nos hotspots: 12.77 K
+* Temperatura máxima B07: 386.10 K
+* Temperatura média B07: 322.38 K
+
+Creio que informações assim serão úteis para o treinamento do modelo de redes neurais. Um dos primeiros testes que farei é com o modelo LSTM (Long Short-Term Memory). Ele se autobalanceia escolhendo o que esquecer e o que manter. 
+
 Anteriormente havia comentado que foi possível detectar grande parte dos incêndios detectados pelo DBQueimadas, exceto os da região amazônica. Acho que isso aconteceu devido a quantidade e concentração de nuvens da região.
 O $\Delta$BT é útil na detecção de incêndios, mas não consegue detectar incêndios abaixo de nuvens densas, esse será um novo problema que teremos que resolver. Nuvens do tipo cumulonimbo, estrato espesso ou nimbostratus são efetivamente corpos opacos nas bandas do infravermelho termal (3.9 µm e 11 µm). A radiação emitida por qualquer fonte abaixo da nuvem não consegue atravessar a camada de gotículas/partículas de gelo para atingir o sensor do satélite.
 
