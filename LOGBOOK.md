@@ -182,3 +182,5 @@ Creio que informações assim serão úteis para o treinamento do modelo de rede
 Anteriormente havia comentado que foi possível detectar grande parte dos incêndios detectados pelo DBQueimadas, exceto os da região amazônica. Acho que isso aconteceu devido a quantidade e concentração de nuvens da região.
 O $\Delta$ BT é útil na detecção de incêndios, mas não consegue detectar incêndios abaixo de nuvens densas, esse será um novo problema que teremos que resolver. Nuvens do tipo cumulonimbo, estrato espesso ou nimbostratus são efetivamente corpos opacos nas bandas do infravermelho termal (3.9 µm e 11 µm). A radiação emitida por qualquer fonte abaixo da nuvem não consegue atravessar a camada de gotículas/partículas de gelo para atingir o sensor do satélite.
 
+Por enquanto acho que a estratégia mais simples e eficaz para montar o dataset vai ser apenas fazer o corte da região de Goiás e guardar as bands necessárias e fazer o processamento direto no algoritmo principal.
+Encontrar alguma técnica que resete o gasto de Ram assim que o processamento acabar para liberar memoria para o proximo
