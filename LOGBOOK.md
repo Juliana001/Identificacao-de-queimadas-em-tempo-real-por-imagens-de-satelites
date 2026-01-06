@@ -201,3 +201,5 @@ NTIR
 BT
 
 MIRBI
+
+E uma coisa que descobri é que pode ser útil tratar a detecção de incêndios como um processo estocástico, uma vez que os índices trabalham melhor se forem calculados como variação ao longo do tempo, sendo assim, a ordem das imagens vai importar e vamos ter que descobrir uma forma de guardar as imagens quando o sistema estiver funcionando.
