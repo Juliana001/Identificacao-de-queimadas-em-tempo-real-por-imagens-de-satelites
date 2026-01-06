@@ -208,9 +208,11 @@ No trabalho original de TRIGG e FLASSE, a dupla de bandas que entregou maior sep
 
 O equivalente disso no GOES19 seria: Banda 5 e 6, entretando, há uma divergência nas resoluções espaciais das bandas: enquanto ambas as bandas do MODIS tem 500m, as do GOES19 tem respectivamente 1km e 2km. Acho que isso contribuiu negativamente para o resultado encontrado. 
 Resultado bandas 5 e 6
+
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1flo53XwRAduQmDZxn955El-c2I3rc_NJ)
 
 Tentando contornar este problema eu utilizei as bandas 6 e 7, que acabou virando um SWIR-TIR e que teve um resultado muito satisfatório em relação a tentativa de alcançar o MIRBI original.
 
 Resultado bandas 6 e 7
+
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1JeuLEJM_6AgzVf_F7rlrqdYUelB1lbEY)
