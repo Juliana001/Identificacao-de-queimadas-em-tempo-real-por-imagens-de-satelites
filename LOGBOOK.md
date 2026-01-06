@@ -184,3 +184,20 @@ O $\Delta$ BT é útil na detecção de incêndios, mas não consegue detectar i
 
 Por enquanto acho que a estratégia mais simples e eficaz para montar o dataset vai ser apenas fazer o corte da região de Goiás e guardar as bands necessárias e fazer o processamento direto no algoritmo principal.
 Encontrar alguma técnica que resete o gasto de Ram assim que o processamento acabar para liberar memoria para o proximo
+
+
+Por enquanto, ficou decidido que o dataset sera composto pelos netcdf diretamente puxados do aws, o único processamento feito será a escolha das bandas necessárias e o recorte para Goiás.
+
+Na busca por desenvolver uma metodologia eficaz para a detecção de incêndios florestais encontrei o Índice MIRBI que foi desenvolvido especialmente para hotspots como Cerrado e Savanas, mas como ele njão foi feito para os tipos de banda disponíveis no GOES19, fiz uma adaptação que até então tem se mostrado eficaz.
+
+Os índices que estão sendo estudados são:
+
+NDVI
+
+TIR
+
+NTIR
+
+BT
+
+MIRBI
