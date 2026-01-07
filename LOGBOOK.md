@@ -221,3 +221,8 @@ Resultado bandas 6 e 7
  ----------------------------------------------------------------------------------------------------------------------------------------
 
  Até o presente momento tenho pensado em utilizar os índices NDVI, BT e MIRBI como uma cadeia de Primeiros neurônios. Todos esses índices demosntraram bom desempenho na detecção de incêndios.
+
+ Uma coisa que acabei de perceber e que eu não tinha percebido antes era  o "filtro" de nuvem que o MIRBI usando as bandas 5 e 6 criou. Pelo que vi, restaram apenas as nuvens mais densas, o que limpou muito o mapa.
+
+ ![Apresentacao](https://drive.google.com/uc?export=view&id=1jdhJ2rDouJTagLKeVB4cbOb64oM0vzWC)
+
