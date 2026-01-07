@@ -234,5 +234,7 @@ Resultado bandas 6 e 7
 
   Temos então um problema. Mas acho que seria possível fazer uma composição usando o MIRBI das bandas 5 e 7 e o LST. Eu estou pensando em literalmente uma fusão de imagens, mas apenas da parte que está faltando. Acho que com a ideia de análise temporal não teríamos um efeito negativo.
 
+  A ideia mais imples que tive é fazer algo booleano como: nesse pixel do lst é nulo? então ele é igual ao pixel do MIRBI bandas 5 e 6. Mas lembrando que é apenas para a região de Goiás.
+
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1jdhJ2rDouJTagLKeVB4cbOb64oM0vzWC)
 
