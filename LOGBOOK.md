@@ -224,5 +224,15 @@ Resultado bandas 6 e 7
 
  Uma coisa que acabei de perceber e que eu não tinha percebido antes era  o "filtro" de nuvem que o MIRBI usando as bandas 5 e 6 criou. Pelo que vi, restaram apenas as nuvens mais densas, o que limpou muito o mapa.
 
+ Outra coisa que descobri foi o produto L2 LST.
+ O produto L2 LST do GOES‑19 é um produto de Nível 2 do sensor ABI (Advanced Baseline Imager) do satélite geoestacionário GOES‑19 que fornece temperatura da superfície terrestre.
+ Poderiamos fazer calcular o LST, mas ele não depende apenas das bandas, ele precisa de coeficientes calibrados de emissividade, vapor de água, ângulo de visada, sendo que desses, o único que temos é o de ângulo de visada, os outros não conseguimos obter, nem calcular de forma calibrada.
+
+ # LST vs BT
+  O LST vem com a ideia da temperatura real da superfície, com erro entre 1°C e 3°C. Já o BT vem com a ideia de temperatura aparente, sem considerar emissividade e com erro variando entre 5°C e 15°C.
+  Como podemos ver nas imagens fornecidas, o BT ele tem sua relevância e mantém as núvens, enquanto que o LST retira todas as núvens e tudo que está abaixo delas.
+
+  Temos então um problema. Mas acho que seria possível fazer uma composição usando o MIRBI das bandas 5 e 7 e o LST. Eu estou pensando em literalmente uma fusão de imagens, mas apenas da parte que está faltando. Acho que com a ideia de análise temporal não teríamos um efeito negativo.
+
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1jdhJ2rDouJTagLKeVB4cbOb64oM0vzWC)
 
