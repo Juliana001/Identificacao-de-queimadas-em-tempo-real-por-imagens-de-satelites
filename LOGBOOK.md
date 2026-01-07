@@ -238,3 +238,10 @@ Resultado bandas 6 e 7
 
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1jdhJ2rDouJTagLKeVB4cbOb64oM0vzWC)
 
+ -------------------------------------------------------------------
+ Aparentemente o MIRBI não poderá ser utilizado por não ser confiável devido a assinatura espectral das bandas.
+
+ Outros índices que irei estudar são:
+ * FRP
+ * NDFI
+
