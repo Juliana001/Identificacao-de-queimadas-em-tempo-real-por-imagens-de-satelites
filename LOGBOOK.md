@@ -216,3 +216,5 @@ Tentando contornar este problema eu utilizei as bandas 6 e 7, que acabou virando
 Resultado bandas 6 e 7
 
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1JeuLEJM_6AgzVf_F7rlrqdYUelB1lbEY)
+
+ Embora o MIRBI tenha sido originalmente formulado para as bandas 5 e 6 do SEVIRI, o índice é fundamentado no contraste espectral entre o infravermelho médio curto (~3.9 µm), altamente sensível à presença de fogo, e uma banda térmica de janela atmosférica (~10–12 µm), representativa da temperatura de fundo. No sensor ABI do GOES-19, as bandas 6 e 7 ocupam regiões espectrais funcionalmente equivalentes às utilizadas no estudo original, o que explica o desempenho satisfatório do índice mesmo com comprimentos de onda centrais distintos.
