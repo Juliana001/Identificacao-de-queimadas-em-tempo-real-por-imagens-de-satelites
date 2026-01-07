@@ -245,3 +245,6 @@ Resultado bandas 6 e 7
  * FRP
  * NDFI
 
+
+
+
