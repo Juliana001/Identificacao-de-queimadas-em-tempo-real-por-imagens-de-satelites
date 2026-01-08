@@ -253,4 +253,8 @@ Resultado bandas 6 e 7
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1uiQr9tIvGx_kFHLiqkjR7jO7J9eINiGB)
  O NDFI calculado com as bandas 6 e 7 também apresenta o mesmo problema. Ambas são bandas de infravermelho curtas.
 
+ Até agora, dos produtos fornecidos pelo GOES, apenas o LST mostrou coerência com os dados que temos do BDQueimadas. E o MIRBI, mesmo sendo calculado de forma espectralmente incorreta também apresentou coerência tanto na minimização de núvens finas, quanto na detecção de áreas quentes.
+
+ Como já mencionei anteriormente, nosso dataset será composto pelos dados do L2 do ABI GOES19, apenas com o processamento de recorte para a área de Goiás. Todos esses índices comporão a nossa rede neural.
+
 
