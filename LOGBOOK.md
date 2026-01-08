@@ -246,8 +246,11 @@ Resultado bandas 6 e 7
 
  ![Apresentacao](https://drive.google.com/uc?export=view&id=1lzli-amIHkwXd8IOE51CPJQ8XGiRg0h5)
 
+ Pelo que podemos ver, a plotagem dos dados ficou imprecisa, visto que as nuvens são sinalizadas como fogo e as áreas de fogo como áreas sem fogo. Ainda não identifiquei se isso foi erro na minha plotagem ou se a imprecisão é do produto
+
  * NDFI
 
-
+ ![Apresentacao](https://drive.google.com/uc?export=view&id=1uiQr9tIvGx_kFHLiqkjR7jO7J9eINiGB)
+ O NDFI calculado com as bandas 6 e 7 também apresenta o mesmo problema. Ambas são bandas de infravermelho curtas.
 
 
