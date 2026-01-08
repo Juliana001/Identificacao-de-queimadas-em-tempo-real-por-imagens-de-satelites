@@ -243,6 +243,9 @@ Resultado bandas 6 e 7
 
  Outros índices que irei estudar são:
  * FRP
+
+ ![Apresentacao](https://drive.google.com/uc?export=view&id=1lzli-amIHkwXd8IOE51CPJQ8XGiRg0h5)
+
  * NDFI
 
 
