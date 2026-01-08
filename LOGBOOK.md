@@ -257,4 +257,6 @@ Resultado bandas 6 e 7
 
  Como já mencionei anteriormente, nosso dataset será composto pelos dados do L2 do ABI GOES19, apenas com o processamento de recorte para a área de Goiás. Todos esses índices comporão a nossa rede neural.
 
+ Estou gastando um tempo maior com essa análise para garantir que os dados terão a melhor qualidade quanto possível, pois se os dados forem ruins, o modelo vai devolver respostas ruins, se os dados forem bons, por mais que o modelo não seja tão bom, ainda assim teremos resultados coerentes.
+
 
