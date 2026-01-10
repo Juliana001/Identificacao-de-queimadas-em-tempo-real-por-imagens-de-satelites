@@ -263,4 +263,13 @@ Resultado bandas 6 e 7
  __________________________________________________________________________________________________________________________________________
 Existem redes neurais supervisionadas e não supervisionadas. As supervisionadas são treinadas mostrando o que é e o que não é. Já a não supervisionada aprende sozinha. Vou treinar uma supervisionada e uma não supervisionada para termos nosso primeiro parecer, tanto das redes neurais, quanto do que escolhemos para treiná-las.
 
+Para uma prova de conceito inicial vou utilizar a estratégia 5-fold com 50 dados nos dois tipos de modelo. Deixo claro que é apenas uma prova de conceito para validar se o que pensei em fazer é viável ou não.
+
+O que pretendo validar:
+- A escolha de montar o dataset apenas com os dados brutos, apenas com o recorte da área da certo?
+- O modelo aprende algo com o netcdf?
+  - Se não aprender será que é melhor usar visão computacional com imagens?
+- A solução foi bem formulada?
+- Qual é melhor: supervisionado ou não supervisionado?
+
 
