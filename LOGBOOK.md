@@ -260,3 +260,7 @@ Resultado bandas 6 e 7
  Estou gastando um tempo maior com essa análise para garantir que os dados terão a melhor qualidade quanto possível, pois se os dados forem ruins, o modelo vai devolver respostas ruins, se os dados forem bons, por mais que o modelo não seja tão bom, ainda assim teremos resultados coerentes.
 
 
+ __________________________________________________________________________________________________________________________________________
+Existem redes neurais supervisionadas e não supervisionadas. As supervisionadas são treinadas mostrando o que é e o que não é. Já a não supervisionada aprende sozinha. Vou treinar uma supervisionada e uma não supervisionada para termos nosso primeiro parecer, tanto das redes neurais, quanto do que escolhemos para treiná-las.
+
+
