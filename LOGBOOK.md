@@ -268,7 +268,7 @@ Para uma prova de conceito inicial vou utilizar a estratégia 5-fold com 50 dado
 O que pretendo validar:
 - A escolha de montar o dataset apenas com os dados brutos, apenas com o recorte da área da certo?
 - O modelo aprende algo com o netcdf?
-  - Se não aprender será que é melhor usar visão computacional com imagens?
+  - Se não aprender: será que é melhor usar visão computacional com imagens?
 - A solução foi bem formulada?
 - Qual é melhor: supervisionado ou não supervisionado?
 
