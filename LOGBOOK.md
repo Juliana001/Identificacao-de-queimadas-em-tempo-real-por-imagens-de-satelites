@@ -272,4 +272,7 @@ O que pretendo validar:
 - A solução foi bem formulada?
 - Qual é melhor: supervisionado ou não supervisionado?
 
+  ______________________________________________________________________________________________________________________________________________
+  O dataset já está sendo montado e foi decidido não recortar o estado de Goiás, nem baixar os dados já com referenciamento de latitude e longetude, uma vez que o algoritmo terá que fazer isso em tempo real quando estiver funcionando. Então, para analisarmos a viabilidade do processo como um todo, vamos baixar o xarray do jeito que ele é puxado sem nenhum processamento, para não maquiarmos possíveis demoras na execução. Os dados estão sendo baixados direto no Google Drive.
+
 
