@@ -275,4 +275,13 @@ O que pretendo validar:
   ______________________________________________________________________________________________________________________________________________
   O dataset já está sendo montado e foi decidido não recortar o estado de Goiás, nem baixar os dados já com referenciamento de latitude e longetude, uma vez que o algoritmo terá que fazer isso em tempo real quando estiver funcionando. Então, para analisarmos a viabilidade do processo como um todo, vamos baixar o xarray do jeito que ele é puxado sem nenhum processamento, para não maquiarmos possíveis demoras na execução. Os dados estão sendo baixados direto no Google Drive.
 
+Abaixo apresento o tamanho de alguns dos NetCDFs baixados. É possível perceber que são arquivos grandes. Foram baixados um total de 40 arquivos, o que é mais ou menos 12Gb de memória. Sabemos que para treinarmos redes neurais precisamos de milhares de dados, o que mostra que: mesmo que fosse viável utilizarmos dados de satélites com resolução espacial menor que 500m, ainda assim esbarrariamos na questão de ter espaço para armazenar o dataset e posteriormente em ter recursos computacionais para processar dados tão grandes. 
+Quanto a estratégia para montar o dataset, eu puxei dados do mês 4 ao mês 11, 5 dados por mês. Procurei pegar dados espaçados para cobrir a maior quantidade de variação de solo no cerrado quanto possível: de 5 em 5 dias, tanto diurnos, quanto noturnos. 
+
+ ![Apresentacao](https://drive.google.com/uc?export=view&id=1Pbv0GXCg-GDZeWuafW51zD9rDsBh_F2I)
+
+
+ Agora que já temos o dataset, precisamos escolher as redes neurais, que serão duas: uma supervisionada e outra não supervisionada. 
+ 
+
 
