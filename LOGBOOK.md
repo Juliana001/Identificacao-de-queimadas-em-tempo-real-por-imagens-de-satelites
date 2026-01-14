@@ -285,7 +285,9 @@ Quanto a estratégia para montar o dataset, eu puxei dados do mês 4 ao mês 11,
  ________________________________________________________________________________________________________________________________________________________
  Estudando os modelos supervisionados cheguei a conclusão que para essa pesquisa não faz sentido aplicar aprendizado supervisionado uma vez que não há como rotular os dados de forma confiável. Para isso seria necessário profissionais da área do geoprocessamento. Nesse sentido, focarei em aplicar redes neurais profundas não supervisionadas. 
  As entregas serão:
+ 
  1- PoC
+ 
  2- MVP
  
 
