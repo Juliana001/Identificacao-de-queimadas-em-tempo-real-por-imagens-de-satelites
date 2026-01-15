@@ -289,6 +289,7 @@ Quanto a estratégia para montar o dataset, eu puxei dados do mês 4 ao mês 11,
  1- PoC
  
  2- MVP
- 
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------
+  ![Apresentacao](https://drive.google.com/uc?export=view&id=1p39dShlGrSQUYcw_GZOHZxZ-wwHhZsB3)
 
 
