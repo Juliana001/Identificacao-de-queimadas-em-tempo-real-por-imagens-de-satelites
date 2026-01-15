@@ -290,6 +290,11 @@ Quanto a estratégia para montar o dataset, eu puxei dados do mês 4 ao mês 11,
  
  2- MVP
  ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Comecei a montar a rede neural, mas me deparei com um problema inesperado: conseguir usar os dados que estão no drive. Individualmente consegui acessar a todas as variáveis que fazem parte de cada NetCDF, mas ao tentar puxar todos os 40 arquivos 40 GB de RAM não suporta. 
+
+ O modelo de rede neural que escolhi para começar é o VAE, que é um autoencoder. Como ele é indicado para detectar anomalias, vou fazer um teste utilizando alguns ínidces espectrais que se mostraram promisssores.
+ 
   ![Apresentacao](https://drive.google.com/uc?export=view&id=1p39dShlGrSQUYcw_GZOHZxZ-wwHhZsB3)
 
 
