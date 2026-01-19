@@ -300,4 +300,5 @@ Quanto a estratégia para montar o dataset, eu puxei dados do mês 4 ao mês 11,
   ____________________________________________________________________________________________________________________________________________________
   A maior dificuldade agora é conseguir acessar os dados. Eu consigo ter acesso aos netcdfs, mas eles estão com dados nan. Enquanto eu montava o dataset no drive, eu testei todos os dados e individualmente era possível acessar a todos os recursos, mas agora que eles estão juntos eu não consigo acessar aos dados para conseguir aplicá-los nas redes neurais.
 
+A minha ideia era montar o dataset com os dados originais, sem nenhuma alteração, para quando começarmos as simulações, ser possível quantificar o tempo total desde o recebimento dos dados, inserção de latitude e longetude que não são dados presentes nos netcdfs, o recorte para o estado de goiás e só então a aplicação da rede neural, porque afinal é assim que ela tem que funcionar. 
 
