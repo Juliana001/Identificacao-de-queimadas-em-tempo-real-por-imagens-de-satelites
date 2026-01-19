@@ -302,3 +302,5 @@ Quanto a estratégia para montar o dataset, eu puxei dados do mês 4 ao mês 11,
 
 A minha ideia era montar o dataset com os dados originais, sem nenhuma alteração, para quando começarmos as simulações, ser possível quantificar o tempo total desde o recebimento dos dados, inserção de latitude e longetude que não são dados presentes nos netcdfs, o recorte para o estado de goiás e só então a aplicação da rede neural, porque afinal é assim que ela tem que funcionar. 
 
+Um questionamento que fica é: como vamos fazer para treinar a rede neural oficial que irá compor o relatório final uma vez que para um simples PoC com apenas 40 dados temos essa dificuldade. São arquivos grandes. Arquivos netcdf são enormes. Para treinarmos uma rede neural, normalmente se usa milhares, milhões de dados. Temo que o trabalho não alcance a excelência dos resultados por conta dessa limitação.
+
