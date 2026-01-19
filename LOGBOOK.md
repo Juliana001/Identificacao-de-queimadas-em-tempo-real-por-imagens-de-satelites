@@ -297,4 +297,7 @@ Quanto a estratégia para montar o dataset, eu puxei dados do mês 4 ao mês 11,
  
   ![Apresentacao](https://drive.google.com/uc?export=view&id=1p39dShlGrSQUYcw_GZOHZxZ-wwHhZsB3)
 
+  ____________________________________________________________________________________________________________________________________________________
+  A maior dificuldade agora é conseguir acessar os dados. Eu consigo ter acesso aos netcdfs, mas eles estão com dados nan. Enquanto eu montava o dataset no drive, eu testei todos os dados e individualmente era possível acessar a todos os recursos, mas agora que eles estão juntos eu não consigo acessar aos dados para conseguir aplicá-los nas redes neurais.
+
 
