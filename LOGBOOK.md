@@ -304,3 +304,5 @@ A minha ideia era montar o dataset com os dados originais, sem nenhuma alteraç�
 
 Um questionamento que fica é: como vamos fazer para treinar a rede neural oficial que irá compor o relatório final uma vez que para um simples PoC com apenas 40 dados temos essa dificuldade. São arquivos grandes. Arquivos netcdf são enormes. Para treinarmos uma rede neural, normalmente se usa milhares, milhões de dados. Temo que o trabalho não alcance a excelência dos resultados por conta dessa limitação.
 
+Consegui ter acesso às variaveis do dataset. Agora é implementar uma rede neural.
+
