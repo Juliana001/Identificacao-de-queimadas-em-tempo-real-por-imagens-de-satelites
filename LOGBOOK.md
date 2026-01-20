@@ -308,3 +308,6 @@ Consegui ter acesso às variaveis do dataset. Agora é implementar uma rede neur
 
 Para a rede neural, penso em implementar uma estrutura tipo VAE (Variational Autoencoder) e um LSTM (Long Short Term Memory). O target é a latitude e longetude dos possíveis incêndios. Sabemos que a arquitetura da rede neural tem que conseguir suportar dados pesados sem consumir muita RAM.
 
+_______________________________________________________________________________________________________________________________________________________
+As estruturas das redes neurais não serão compartilhadas, mas os resultados sim.
+
