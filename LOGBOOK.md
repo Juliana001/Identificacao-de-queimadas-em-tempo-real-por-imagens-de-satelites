@@ -311,3 +311,4 @@ Para a rede neural, penso em implementar uma estrutura tipo VAE (Variational Aut
 _______________________________________________________________________________________________________________________________________________________
 As estruturas das redes neurais não serão compartilhadas, mas os resultados sim.
 
+Justificadno o porque eu preferi montar o dataset colocando os netcdfs na integra: a forma como o problema será resolvido pode mudar, sendo assim eu prefiro manter todos os dados até chegar em um resultado final satisfatório.
