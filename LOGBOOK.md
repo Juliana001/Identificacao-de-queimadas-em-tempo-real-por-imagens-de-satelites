@@ -316,3 +316,5 @@ Justificadno o porque eu preferi montar o dataset colocando os netcdfs na integr
 Na tentativa de calcular a latitude e longetude dos netcdfs, com os 12Gb de RAM do colab só foi possível calcular de 20. A pesquisa fica muito limitada com os recursos computacionais que tenho atualmente. É inviável calcular tudo manualmente uma vez que são muitos netcdfs e ainda nem são os dados que comporão o MVP, ainda é apenas um PoC de 40 netcdfs.
 ![Apresentacao](https://drive.google.com/uc?export=view&id=19-kwSP43G4b0LL4E8c13Gey8B9gEi_7k)
 
+___________________________________________________________________________________________________________________________________________________________
+Consegui os 47Gb de RAM do colab gratuito e estou concluindo o pipeline de dados. Um dos arquivos estava corrompido.
