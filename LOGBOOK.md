@@ -317,4 +317,4 @@ Na tentativa de calcular a latitude e longetude dos netcdfs, com os 12Gb de RAM 
 ![Apresentacao](https://drive.google.com/uc?export=view&id=19-kwSP43G4b0LL4E8c13Gey8B9gEi_7k)
 
 ___________________________________________________________________________________________________________________________________________________________
-Consegui os 47Gb de RAM do colab gratuito e estou concluindo o pipeline de dados. Um dos arquivos estava corrompido.
+Consegui os 47Gb de RAM do colab gratuito e estou concluindo o pipeline de dados. Um dos arquivos estava corrompido. Removi o arquivo corrompido. Agora, antes de implementar o VAE, terei que fazer um estudo mais aprofundado sobre a arquitetura e implementação dele.
