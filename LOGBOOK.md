@@ -328,3 +328,5 @@ Para entender o VAE é preciso compreender primeiro 3 assuntos:
 Esses três asssuntos diferenciam Variational Autoencoder de um Autoencoder. 
 
 Outro ponto crucial é o Backpropagation, já tinha ouvido falar antes mas nunca implementei.
+
+Os dados espectrais dos netcdfs de resolução de 2km geram imagens de 5024X5024, se fossemos criar uma rede neural para todo campo de visão do satélite, precisariamos de 25.24x 10^6  neurônios. Eu não consigo nem imaginar quanto processamento precisariamos para conseguir tratar tudo.
