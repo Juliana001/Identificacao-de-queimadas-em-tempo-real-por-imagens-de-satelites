@@ -318,3 +318,11 @@ Na tentativa de calcular a latitude e longetude dos netcdfs, com os 12Gb de RAM 
 
 ___________________________________________________________________________________________________________________________________________________________
 Consegui os 47Gb de RAM do colab gratuito e estou concluindo o pipeline de dados. Um dos arquivos estava corrompido. Removi o arquivo corrompido. Agora, antes de implementar o VAE, terei que fazer um estudo mais aprofundado sobre a arquitetura e implementação dele.
+
+
+Para entender o VAE é preciso compreender primeiro 3 assuntos:
+* Reparametrization Trick
+* Divergência de Kullback-Leibler
+* Evidence Lower Bound
+
+Esses três asssuntos diferenciam Variational Autoencoder de um Autoencoder. 
