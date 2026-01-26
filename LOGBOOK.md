@@ -326,3 +326,5 @@ Para entender o VAE é preciso compreender primeiro 3 assuntos:
 * Evidence Lower Bound
 
 Esses três asssuntos diferenciam Variational Autoencoder de um Autoencoder. 
+
+Outro ponto crucial é o Backpropagation, já tinha ouvido falar antes mas nunca implementei.
