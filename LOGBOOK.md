@@ -333,3 +333,5 @@ Os dados espectrais dos netcdfs de resolução de 2km geram imagens de 5024X5024
 
 _____________________________________________________________________________________________________________________________________________________________
 Estava relendo e procurando mais trabalhos que possam servir de referência para o meu e vi que a maioria de metodologias de detecção de incêndios florestais envolvem CNN. Ainda não achei nenhum que relaciona VAE e dados de satélites. Entretanto, achei um trabalho de detecção de incêndios prediais que combina justamente os dois tipos de redes neurais que pretendo utilizar: VAE e LSTM. Surpreendentemente, para o fim proposto do trabalho, essas duas redes neurais tiveram desempenho superior à outras redes.
+
+Encontrei um trabalho excelente desenvolvido por pesquisadores da KTH Royal Institute of Technology. Eles utilizaram o GOES, mas como rede neural utilizaram GRU. Alcançaram bons resultados. Utilizaram cerca de 60.000 amostras da regiâo da Califórnia. Eu só não descobri de quanto poder computacional eles precisaram para poder finalizar a pesquisa. Na pesquisa deles, o índice que eles utilizaram foi o dNBR.
