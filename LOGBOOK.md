@@ -330,3 +330,6 @@ Esses três asssuntos diferenciam Variational Autoencoder de um Autoencoder.
 Outro ponto crucial é o Backpropagation, já tinha ouvido falar antes mas nunca implementei.
 
 Os dados espectrais dos netcdfs de resolução de 2km geram imagens de 5024X5024, se fossemos criar uma rede neural para todo campo de visão do satélite, precisariamos de 25.24x 10^6  neurônios. Eu não consigo nem imaginar quanto processamento precisariamos para conseguir tratar tudo. Como Goiás tem aproximadamente 340 mil km^2 e a resolução espacial é de 2km, vamos precisar de pouco mais de 85 mil neurônios, o que é mais viável.
+
+_____________________________________________________________________________________________________________________________________________________________
+Estava relendo e procurando mais trabalhos que possam servir de referência para o meu e vi que a maioria de metodologias de detecção de incêndios florestais envolvem CNN. Ainda não achei nenhum que relaciona VAE e dados de satélites. Entretanto, achei um trabalho de detecção de incêndios prediais que combina justamente os dois tipos de redes neurais que pretendo utilizar: VAE e LSTM. Surpreendentemente, para o fim proposto do trabalho, essas duas redes neurais tiveram desempenho superior à outras redes.
