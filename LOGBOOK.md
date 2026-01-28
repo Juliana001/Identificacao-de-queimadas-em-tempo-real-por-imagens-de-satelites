@@ -341,3 +341,6 @@ Os algoritmos de otimização que estou considerando são:
 - RMSprop
 - SGD
 - GD
+
+A tecnica que escolhi para montar o dataset do PoC foi ruim. Por mais que a ideia seja validar o tempo que gasta, toda vez que eu implementar um modelo novo, gastarei no mínimo 2 horas (se o colab deixar usar a TPU de graça) para rodar tudo.Sem a TPU do colab fica impossível. Então, a próxima vez que eu conseguir acessar a TPU do colab, irei montar um novo dataset, só que dessa vez seguindo o fluxo:
+Puxar o xarray -> inserir latitude e longetude -> recortar o estado de Goiás -> armazenamento do netcdf. Assim, acredito que será mais rápido.
