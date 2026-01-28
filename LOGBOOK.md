@@ -344,3 +344,7 @@ Os algoritmos de otimização que estou considerando são:
 
 A tecnica que escolhi para montar o dataset do PoC foi ruim. Por mais que a ideia seja validar o tempo que gasta, toda vez que eu implementar um modelo novo, gastarei no mínimo 2 horas (se o colab deixar usar a TPU de graça) para rodar tudo.Sem a TPU do colab fica impossível. Então, a próxima vez que eu conseguir acessar a TPU do colab, irei montar um novo dataset, só que dessa vez seguindo o fluxo:
 Puxar o xarray -> inserir latitude e longetude -> recortar o estado de Goiás -> armazenamento do netcdf. Assim, acredito que será mais rápido.
+
+Uma coisa que eu não esperava é que o netcdf de Goiás pudesse muito maior que o do netcdf original. Ele ficou mais que o dobro do tamanho do original. Mas em todo o caso é menos custoso salvar assim do que fazer o processamento toda vez que for fazer algum teste. Acredito que o PoC terá que ser com ainda menos dados.
+
+![Apresentacao](https://drive.google.com/uc?export=view&id=1GIOe_e7ZWmdaY7Uxfk-1jO-1zFmfL_wm)
