@@ -350,3 +350,5 @@ Uma coisa que eu não esperava é que o netcdf de Goiás pudesse muito maior que
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1GIOe_e7ZWmdaY7Uxfk-1jO-1zFmfL_wm)
 
 Agora estou em um dilema: priorizar o tempo de processamento deixando apenas a região de interesse, mas perdendo quantidade de dados ou priorizar a quantidade de dados deixando de lado o tempo de processamento, uma vez que tratar todos os datasets toda vez que for usar a rede neural despenderá muito tempo e muito processamento.
+
+Como a quantidade de dados anteriormente escolhida já era baixa, vou optar por manter os 40 netcdfs e ter paciência com o tempo de processamento.
