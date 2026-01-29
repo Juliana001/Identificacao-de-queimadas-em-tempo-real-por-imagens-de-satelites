@@ -354,4 +354,4 @@ Agora estou em um dilema: priorizar o tempo de processamento deixando apenas a r
 Como a quantidade de dados anteriormente escolhida já era baixa, vou optar por manter os 40 netcdfs e ter paciência com o tempo de processamento.
 
 
-Atualizações sobre o NBR: no Goes realmente não funciona por conta do comprimento de onda
+Atualizações sobre o NBR: no Goes funcionou (teve um resultado próximo do correto) utilizando a banda 6 como nir e a banda 2 como swir.
