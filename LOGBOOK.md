@@ -348,3 +348,5 @@ Puxar o xarray -> inserir latitude e longetude -> recortar o estado de Goiás ->
 Uma coisa que eu não esperava é que o netcdf de Goiás pudesse muito maior que o do netcdf original. Ele ficou mais que o dobro do tamanho do original. Mas em todo o caso é menos custoso salvar assim do que fazer o processamento toda vez que for fazer algum teste. Acredito que o PoC terá que ser com ainda menos dados.
 
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1GIOe_e7ZWmdaY7Uxfk-1jO-1zFmfL_wm)
+
+Agora estou em um dilema: priorizar o tempo de processamento deixando apenas a região de interesse, mas perdendo quantidade de dados ou priorizar a quantidade de dados deixando de lado o tempo de processamento, uma vez que tratar todos os datasets toda vez que for usar a rede neural despenderá muito tempo e muito processamento.
