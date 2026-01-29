@@ -355,3 +355,5 @@ Como a quantidade de dados anteriormente escolhida já era baixa, vou optar por 
 
 
 Atualizações sobre o NBR: no Goes funcionou (teve um resultado próximo do correto) utilizando a banda 6 como nir e a banda 2 como swir.
+
+![Apresentacao](https://drive.google.com/uc?export=view&id=1H5cwcoS2P3qJQ5t8cSlTsA-5Tc3COqeF)
