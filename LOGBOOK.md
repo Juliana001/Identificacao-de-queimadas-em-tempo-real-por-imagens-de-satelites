@@ -359,4 +359,4 @@ Atualizações sobre o NBR: no Goes funcionou (teve um resultado próximo do cor
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1H5cwcoS2P3qJQ5t8cSlTsA-5Tc3COqeF)
 
 
-Eu estava pensando em criar um dataset do goes19 dentro do GEE, mas os dados do Goes são netcdf e o GEE tem suporte para geotiff
+Eu estava pensando em criar um dataset do goes19 dentro do GEE, mas os dados do Goes são netcdf e o GEE tem suporte para geotiff. Para a presente pesquisa utilizarei tanto netcdf quanto geotiff. Ou talvez só netcdf. 
