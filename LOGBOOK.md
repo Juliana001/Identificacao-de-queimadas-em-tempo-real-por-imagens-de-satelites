@@ -362,4 +362,4 @@ Atualizações sobre o NBR: no Goes funcionou (teve um resultado próximo do cor
 Eu estava pensando em criar um dataset do goes19 dentro do GEE, mas os dados do Goes são netcdf e o GEE tem suporte para geotiff. Para a presente pesquisa utilizarei tanto netcdf quanto geotiff. Ou talvez só netcdf. 
 
 
-Como a metologia que desenvolvi precisa de dados do VIIRS, estou tentando acessá-los, mas advirto que não é uma tarefa fácil de se fazer.
+Como a metologia que desenvolvi precisa de dados do VIIRS, estou tentando acessá-los, mas advirto que não é uma tarefa fácil de se fazer. Os dados para baixar do viirs são em formato txt.
