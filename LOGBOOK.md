@@ -363,4 +363,4 @@ Eu estava pensando em criar um dataset do goes19 dentro do GEE, mas os dados do 
 
 
 Como a metologia que desenvolvi precisa de dados do VIIRS, estou tentando acessá-los, mas advirto que não é uma tarefa fácil de se fazer. Os dados para baixar do viirs são em formato txt. Uma das maiores vantagens do Goes é a facilidade de puxar dados. 
-Esbarramos em um problema: para ter acesso ao viirs é preciso baixar os dados e são terabytes de dados. Como viabilizar isso? A melhor ideia é a utilização de APIs para puxar apenas alguns dados, quase da mesma forma que é feito no GOES. O desafio é descobrir como fazer isso.
+Esbarramos em um problema: para ter acesso ao viirs é preciso baixar os dados e são terabytes de dados. Como viabilizar isso? A melhor ideia é a utilização de APIs para puxar apenas alguns dados, quase da mesma forma que é feito no GOES. O desafio é descobrir como fazer isso. Bem complexo conseguir pegar dados via API.
