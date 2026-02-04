@@ -368,3 +368,5 @@ Esbarramos em um problema: para ter acesso ao viirs é preciso baixar os dados e
 Para processar de forma mais eficiente vou tentar comprimir os netcdfs. Digo tentar porque já tentei algumas compressões, mas acabei aumentado o tamanho do arquivo.
 
 Surgiu um novo problema com os arquivos netcdf: é como se todos estivessem corrompidos. Provavelmente ouve atualização de alguma das versões, mas ainda não identifiquei qual. Não está sendo possível baixar os arquivos da mesma forma que baixei a poucos dias.
+
+2 horas para resolver o problema, mas resolvi. O problema aconteceu porque a biblioteca xarray atualizou da semana passada para essa e a engine não é mais netcdf4 para h5netcdf. A forma de tratar os dados não muda. Agora é necessário sinalizar a engine. Resolvido. Podemos voltar a programação padrão.
