@@ -366,3 +366,5 @@ Como a metologia que desenvolvi precisa de dados do VIIRS, estou tentando acess�
 Esbarramos em um problema: para ter acesso ao viirs é preciso baixar os dados e são terabytes de dados. Como viabilizar isso? A melhor ideia é a utilização de APIs para puxar apenas alguns dados, quase da mesma forma que é feito no GOES. O desafio é descobrir como fazer isso. Bem complexo conseguir pegar dados via API.
 
 Para processar de forma mais eficiente vou tentar comprimir os netcdfs. Digo tentar porque já tentei algumas compressões, mas acabei aumentado o tamanho do arquivo.
+
+Surgiu um novo problema com os arquivos netcdf: é como se todos estivessem corrompidos. Provavelmente ouve atualização de alguma das versões, mas ainda não identifiquei qual.
