@@ -371,3 +371,5 @@ Surgiu um novo problema com os arquivos netcdf: é como se todos estivessem corr
 
 2 horas para resolver o problema, mas resolvi. O problema aconteceu porque a biblioteca xarray atualizou da semana passada para essa e a engine não é mais netcdf4 para h5netcdf. A forma de tratar os dados não muda. Agora é necessário sinalizar a engine. Resolvido. Podemos voltar a programação padrão. 
 E sabe a melhor novidade de todas? Agora, o arquivo com latitude e longitude recortado em Goiás ocupa apenas 18Mb ao invés de mais de 800 Mb. Com isso, ferei um novo dataset recortado. Sendo assim, montarei um novo dataset para o PoC do relatório parcial.
+
+Já que agora temos netcdfs mais leves, vou montar um dataset de 50 dados apenas com o recorte de Goiás e as coordenadas cartesianas e a partir desse dataset vou montar outro com os indices espectrais e comparar o desempenho dos dois.
