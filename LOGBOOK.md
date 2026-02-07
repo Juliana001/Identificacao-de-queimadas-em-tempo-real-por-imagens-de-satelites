@@ -375,3 +375,16 @@ E sabe a melhor novidade de todas? Agora, o arquivo com latitude e longitude rec
 Já que agora temos netcdfs mais leves, vou montar um dataset de 50 dados apenas com o recorte de Goiás e as coordenadas cartesianas e a partir desse dataset vou montar outro com os indices espectrais e comparar o desempenho dos dois.
 
 A primeira rede neural profunda foi implementada. É uma VAE. Para minha surpresa, a atualização do xarray só toruxe benefícios: foi possível diminuir significativamente o tamanho dos arquivos. Eles saíram de 330Mb para 18Mb. E a rede neural, trabalhado apenas com a área de interesse, não chegou a atingir 5Gb de Ram utilizada.
+
+O dia de teste foi 01/09/2025
+
+O BDQueimadas sinalizou os seguintes incêndios:
+
+![Apresentacao](https://drive.google.com/uc?export=view&id=1Gx4-R9RQWioUezcPeBVnbNx0DLa1Tq-s)
+
+O meu modelo VAE detectou os seguintes incêndios:
+
+![Apresentacao](https://drive.google.com/uc?export=view&id=1cvuAUEsQ2qKfBfCvexHda6TM8W6wHhb-)
+
+
+De todos os sinalizados, meu modelo detectou apenas 2. Como a resolução espacial do satélite que utilizei é de 2km, deveria ser depois de detectar que entraria as imagens do MODIS. Aplicar as imagens do MODIS apenas nas regiões de incêndio podem dificultar a detecção de pequenos focos, sendo assim, vou inserir um gradiente que calcula a maior variação de chance de incendio e o zoom será centrado na região de incendio e terá um raio com o comprimento do vetor gradiente.
