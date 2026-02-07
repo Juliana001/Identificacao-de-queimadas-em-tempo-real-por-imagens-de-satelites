@@ -373,3 +373,5 @@ Surgiu um novo problema com os arquivos netcdf: é como se todos estivessem corr
 E sabe a melhor novidade de todas? Agora, o arquivo com latitude e longitude recortado em Goiás ocupa apenas 18Mb ao invés de mais de 800 Mb. Com isso, ferei um novo dataset recortado. Sendo assim, montarei um novo dataset para o PoC do relatório parcial.
 
 Já que agora temos netcdfs mais leves, vou montar um dataset de 50 dados apenas com o recorte de Goiás e as coordenadas cartesianas e a partir desse dataset vou montar outro com os indices espectrais e comparar o desempenho dos dois.
+
+A primeira rede neural profunda foi implementada. É uma VAE. Para minha surpresa, a atualização do xarray só toruxe benefícios: foi possível diminuir significativamente o tamanho dos arquivos. Eles saíram de 330Mb para 18Mb. E a rede neural, trabalhado apenas com a área de interesse, não chegou a atingir 5Gb de Ram utilizada.
