@@ -388,3 +388,5 @@ O meu modelo VAE detectou os seguintes incêndios:
 
 
 De todos os sinalizados, meu modelo detectou apenas 2. Como a resolução espacial do satélite que utilizei é de 2km, deveria ser depois de detectar que entraria as imagens do MODIS. Aplicar as imagens do MODIS apenas nas regiões de incêndio podem dificultar a detecção de pequenos focos, sendo assim, vou inserir um gradiente que calcula a maior variação de chance de incendio e o zoom será centrado na região de incendio e terá um raio com o comprimento do vetor gradiente.
+
+Agora que vi que a rede detectou mais incêndios, mas apenas dois são grandes o suficiente para serem distinguidos. Os outros são bem pequenos, quase de um único pixel.
