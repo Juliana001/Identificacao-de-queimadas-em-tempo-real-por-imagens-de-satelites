@@ -399,3 +399,5 @@ Atualizações: os incêndios detectados pelo satélite GOES19 no BDQueimadas s�
 
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1Gx4-R9RQWioUezcPeBVnbNx0DLa1Tq-s)
 
+
+Consegui os dados pelo BDQueimadas em formato CSV e vou reavaliar o modelo, mas alguns pontos já identifiquei falha: algumas núvens foram interpratadas como fogo. 
