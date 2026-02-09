@@ -396,3 +396,6 @@ Agora que vi que a rede detectou mais incêndios, mas apenas dois são grandes o
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1vq92MwOP5Esk-j2SLH23gDEDLFFFlmKa)
 
 Atualizações: os incêndios detectados pelo satélite GOES19 no BDQueimadas são praticamente os mesmos do que os que o VAE detectou, falta apenas eu conseguir a ground truth para avaliar.
+
+![Apresentacao](https://drive.google.com/uc?export=view&id=1Gx4-R9RQWioUezcPeBVnbNx0DLa1Tq-s)
+
