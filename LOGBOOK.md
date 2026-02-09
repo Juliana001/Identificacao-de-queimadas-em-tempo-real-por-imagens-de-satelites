@@ -378,9 +378,9 @@ A primeira rede neural profunda foi implementada. É uma VAE. Para minha surpres
 
 O dia de teste foi 01/09/2025
 
-O BDQueimadas sinalizou os seguintes incêndios:
+O FIRMS sinalizou os seguintes incêndios:
 
-![Apresentacao](https://drive.google.com/uc?export=view&id=1Gx4-R9RQWioUezcPeBVnbNx0DLa1Tq-s)
+![Apresentacao](https://drive.google.com/uc?export=view&id=1awaU9ihbUnp1ld9GLjP3Qkfv9m6sc4Vf)
 
 O meu modelo VAE detectou os seguintes incêndios:
 
@@ -392,3 +392,5 @@ Visivelmente o modelo deu certo, mas calcular a acurácia tem sido um desafio, u
 De todos os sinalizados, meu modelo detectou apenas 2. Como a resolução espacial do satélite que utilizei é de 2km, deveria ser depois de detectar que entraria as imagens do MODIS. Aplicar as imagens do MODIS apenas nas regiões de incêndio podem dificultar a detecção de pequenos focos, sendo assim, vou inserir um gradiente que calcula a maior variação de chance de incendio e o zoom será centrado na região de incendio e terá um raio com o comprimento do vetor gradiente.
 
 Agora que vi que a rede detectou mais incêndios, mas apenas dois são grandes o suficiente para serem distinguidos. Os outros são bem pequenos, quase de um único pixel.
+
+![Apresentacao](https://drive.google.com/uc?export=view&id=1vq92MwOP5Esk-j2SLH23gDEDLFFFlmKa)
