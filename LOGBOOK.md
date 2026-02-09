@@ -394,3 +394,5 @@ De todos os sinalizados, meu modelo detectou apenas 2. Como a resolução espaci
 Agora que vi que a rede detectou mais incêndios, mas apenas dois são grandes o suficiente para serem distinguidos. Os outros são bem pequenos, quase de um único pixel.
 
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1vq92MwOP5Esk-j2SLH23gDEDLFFFlmKa)
+
+Atualizações: os incêndios detectados pelo satélite GOES19 no BDQueimadas são praticamente os mesmos do que os que o VAE detectou, falta apenas eu conseguir a ground truth para avaliar.
