@@ -380,7 +380,7 @@ O dia de teste foi 01/09/2025
 
 O FIRMS sinalizou os seguintes incêndios:
 
-![Apresentacao](https://drive.google.com/uc?export=view&id=1awaU9ihbUnp1ld9GLjP3Qkfv9m6sc4Vf)
+![Apresentacao](https://drive.google.com/uc?export=view&id=14kzsnpq-co2iDCsX116wSyc4ukNoyREc)
 
 O meu modelo VAE detectou os seguintes incêndios:
 
