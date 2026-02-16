@@ -407,3 +407,7 @@ Agora tenho que desenvolver algo que retire as núvens para refazer o modelo
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Com o resultado insatisfatório do PoC estou pensando em formas de contornar o problema das nuvens. A principio pensei em desenvolver um filtro que retirava as nuvens. É possível retirar as nuvens, mas irei preencher com que dados se não há dados de satélites para isso? Os comprimentos de onda que atravessam as nunvens são superiores a 1 cm, o que equivale a ondas de rádio ou micro-ondas. Até onde sei não há satélites com fins de capturação de imagens que tenham esse tipo de resolução espectral. A minha segunda ideia foi literalmente retirar as partes das nuvens para ver o comportamento do modelo. Antes de mexer no modelo, mexo nos dados porque dados bons em modelos ruins entregam resultados regulares. Dados ruins em modelos ruins não entregam utilidade.
+
+
+
+A ultima atualização que tenho é que consegui reduzir os falsos positivos de quase 6 mil para menos de 500. Visualizando algumas imagens vi que algumas foram com um erro nos dados. Vou inspecionar todas as imagens e irei adicionar mais umas 20 imagens e avaliar o desempenho.
