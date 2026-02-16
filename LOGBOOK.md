@@ -416,3 +416,7 @@ A titulo de comparação, segue abaixo o desempenho com o dataset antigo que tin
 
 ![Apresentacao](https://drive.google.com/uc?export=view&id=14o9_LJyIc4iaxX-4xv95A32LyWX4159A)
 
+
+É possível ver que ainda teve um desempenho limitado, mas melhor do que o do dataset anterior, visto que para reduzir os falsos positivos no primeiro dataset, foram necessárias cerca de 500 épocas, já esse foi treinado com apenas 250.
+![Apresentacao](https://drive.google.com/uc?export=view&id=1roao0_AAD3Upkbcd7b5AVKy2_Z6NZFD_)
+
