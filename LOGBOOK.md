@@ -411,3 +411,8 @@ Com o resultado insatisfatório do PoC estou pensando em formas de contornar o p
 
 
 A ultima atualização que tenho é que consegui reduzir os falsos positivos de quase 6 mil para menos de 500. Visualizando algumas imagens vi que algumas foram com um erro nos dados. Vou inspecionar todas as imagens e irei adicionar mais umas 20 imagens e avaliar o desempenho. Dos 45 netcdfs que compõe o dataset, 10 deles estão com algum tipo de problema. Irei corrigir esses erros, reavaliar o desempenho e depois puxar mais dados.
+
+A titulo de comparação, segue abaixo o desempenho com o dataset antigo que tinha erros. O VAE foi treinado com 1000 épocas e durou cerca de 2 horas.
+
+![Apresentacao](https://drive.google.com/uc?export=view&id=14o9_LJyIc4iaxX-4xv95A32LyWX4159A)
+
