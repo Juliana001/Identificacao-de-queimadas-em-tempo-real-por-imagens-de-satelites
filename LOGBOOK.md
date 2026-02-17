@@ -421,3 +421,5 @@ A titulo de comparação, segue abaixo o desempenho com o dataset antigo que tin
 ![Apresentacao](https://drive.google.com/uc?export=view&id=1roao0_AAD3Upkbcd7b5AVKy2_Z6NZFD_)
 
 O modelo está sendo treinado com 1500 epocas para avaliarmos o aprendizado e inserirmos mais imagens. O MVP já começou a ser construido. Será uma aplicação web.
+
+O modelo levou 4 horas e 35 minutos para ser treinado com 1500 épocas.
