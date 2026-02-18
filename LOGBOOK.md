@@ -422,4 +422,6 @@ A titulo de comparação, segue abaixo o desempenho com o dataset antigo que tin
 
 O modelo está sendo treinado com 1500 epocas para avaliarmos o aprendizado e inserirmos mais imagens. O MVP já começou a ser construido. Será uma aplicação web.
 
-O modelo levou 4 horas e 35 minutos para ser treinado com 1500 épocas. Não houve aumento na quantidade de detecções, continuou em 10, mas diminuiu a qauntidade de falsos poisitivos para 47. É necessário alterar parametros para aumentar a detecção de incendios.
+O modelo levou 4 horas e 35 minutos para ser treinado com 1500 épocas. Não houve aumento na quantidade de detecções, continuou em 10, mas diminuiu a qauntidade de falsos poisitivos para 47. É necessário alterar parametros para aumentar a detecção de incendios.  
+
+Para garantir que os pontos sejam iguais, usaremos a mesma precisão tanto no de teste quanto no de referência. Antes de partirmos para o refinamento do modelo precisamos identificar quais características o modelo está detectando e o que ele está deixando de detectar.
