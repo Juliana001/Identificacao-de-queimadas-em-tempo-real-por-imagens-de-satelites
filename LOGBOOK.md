@@ -425,3 +425,5 @@ O modelo está sendo treinado com 1500 epocas para avaliarmos o aprendizado e in
 O modelo levou 4 horas e 35 minutos para ser treinado com 1500 épocas. Não houve aumento na quantidade de detecções, continuou em 10, mas diminuiu a qauntidade de falsos poisitivos para 47. É necessário alterar parametros para aumentar a detecção de incendios.  
 
 Para garantir que os pontos sejam iguais, usaremos a mesma precisão tanto no de teste quanto no de referência. Antes de partirmos para o refinamento do modelo precisamos identificar quais características o modelo está detectando e o que ele está deixando de detectar.
+
+Estamos tendo um pequeno problema quanto ao arredondamento das coordenadas geográficas
