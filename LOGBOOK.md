@@ -427,3 +427,5 @@ O modelo levou 4 horas e 35 minutos para ser treinado com 1500 épocas. Não hou
 Para garantir que os pontos sejam iguais, usaremos a mesma precisão tanto no de teste quanto no de referência. Antes de partirmos para o refinamento do modelo precisamos identificar quais características o modelo está detectando e o que ele está deixando de detectar.
 
 Estamos tendo um pequeno problema quanto ao arredondamento das coordenadas geográficas
+
+Atualizações: o modelo detectou 15 focos de 30. Está com uma alta detecção de falsos verdadeiros de 215. Todos esses valores se devem por conta de úvens que também são anomalias. preciso pensar em formas de contornar esse problema.
