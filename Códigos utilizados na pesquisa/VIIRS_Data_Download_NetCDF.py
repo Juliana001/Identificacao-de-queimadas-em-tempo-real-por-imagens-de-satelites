@@ -16,10 +16,10 @@ warnings.filterwarnings('ignore')
 # ee.Authenticate()
 
 # Inicializa o Earth Engine com a ID do Projeto
-ee.Initialize(project='upbeat-beach-485113-j7')
+ee.Initialize(project='id_do_proj')
 
 # Define o diretório de saída (MUDE ESTE CAMINHO)
-output_dir = r"C:\Users\joaos\Downloads\viirs"  # Windows
+output_dir = r"C:\"  # Windows
 
 # Cria o diretório se não existir
 os.makedirs(output_dir, exist_ok=True)
