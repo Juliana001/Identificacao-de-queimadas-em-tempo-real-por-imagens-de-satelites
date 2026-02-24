@@ -1,14 +1,8 @@
-import ee
-import xarray as xr
+import ee 
 import rioxarray
 import numpy as np
-import pandas as pd
-import geopandas as gpd
-from shapely.geometry import box
 import os
-from datetime import datetime, timedelta
 import requests
-from io import BytesIO
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -16,16 +10,14 @@ warnings.filterwarnings('ignore')
 # ee.Authenticate()
 
 # Inicializa o Earth Engine com a ID do Projeto
-ee.Initialize(project='id_do_proj')
+ee.Initialize(project='id')  
 
-# Define o diretório de saída (MUDE ESTE CAMINHO)
+# Define o diretório de saída
 output_dir = r"C:\"  # Windows
-
-# Cria o diretório se não existir
 os.makedirs(output_dir, exist_ok=True)
 print(f"Arquivos serão salvos em: {output_dir}")
 
-# Lista de datas
+# Datas de interesse
 date_strings = [
     '10/04/2025', '13/04/2025', '15/04/2025', '20/04/2025', '25/04/2025',
     '01/05/2025', '03/05/2025', '05/05/2025', '06/05/2025', '12/05/2025',
@@ -40,163 +32,114 @@ date_strings = [
     '23/11/2025', '29/11/2025'
 ]
 
-# Formata como YYYY-MM-DD
 def format_date(date_str):
     parts = date_str.split('/')
     return f"{parts[2]}-{parts[1]}-{parts[0]}"
 
 dates = [format_date(d) for d in date_strings]
 
-# Área de Interesse em Lat/Lon
+# Área de interesse
 lon_min, lon_max = -53.5, -45
 lat_min, lat_max = -19.5, -11.8
 aoi = ee.Geometry.Rectangle(lon_min, lat_min, lon_max, lat_max)
 
 print(f"Processando {len(dates)} datas para AOI: Lon [{lon_min}, {lon_max}], Lat [{lat_min}, {lat_max}]")
 
-def download_and_save_night(date):
-    """Download do VIIRS nightlight e salva como NetCDF individual"""
+# Função para converter GeoTIFF em NetCDF
+def convert_tif_to_netcdf(tif_path, date):
+    try:
+        da = rioxarray.open_rasterio(tif_path).squeeze()
+        da = da.rio.reproject("EPSG:4326")  # Reprojeta para sistema lat/lon convencional
+        da = da.rio.clip_box(minx=lon_min, maxx=lon_max, miny=lat_min, maxy=lat_max) # Clipa a Area de Interesse
+        da = da.rename({"x": "longitude", "y": "latitude"})
+
+        if da.latitude.values[0] > da.latitude.values[-1]:
+            da = da.sortby("latitude")
+
+        da = da.expand_dims(time=[np.datetime64(date)])
+        da.attrs.update({"units": "Celsius", "long_name": "Land Surface Temperature"})
+
+        ds = da.to_dataset(name="LST")
+        ds["latitude"].attrs["units"] = "degrees_north"
+        ds["longitude"].attrs["units"] = "degrees_east"
+
+        encoding = {"LST": {"zlib": True, "complevel": 4, "dtype": "float32"}}
+        nc_path = tif_path.replace(".tif", ".nc")
+        ds.to_netcdf(nc_path, engine="netcdf4", encoding=encoding)
+
+        ds.close()
+        da.close()
+        print(f"  NetCDF criado: {os.path.basename(nc_path)}")
+        return True
+    except Exception as e:
+        print(f"  Erro na conversão NetCDF: {repr(e)}")
+        return False
+
+# Função para baixar e salvar os dados do viirs
+def download_and_save(date, collection_id, suffix):
     try:
         start_date = ee.Date(date)
         end_date = start_date.advance(1, 'day')
-        
-        # Obtém a imagem
-        img = ee.ImageCollection("NASA/VIIRS/002/VNP46A2") \
+
+        collection = ee.ImageCollection(collection_id) \
             .filterBounds(aoi) \
-            .filterDate(start_date, end_date) \
-            .select('Gap_Filled_DNB_BRDF_Corrected_NTL') \
-            .first() \
-            .clip(aoi)
-        
-        # Verifica se a imagem existe
-        if img is None:
-            print(f"  Sem dados para {date}")
+            .filterDate(start_date, end_date)
+
+        if collection.size().getInfo() == 0:
+            print(f"  Sem dados para {date} ({suffix})")
             return False
+
+        img = collection.first().select("LST_1KM")
         
-        # URL de download
+        # Mask for valid temperatures (250-330K)
+        valid_mask = img.gt(250).And(img.lt(330))
+        img = img.updateMask(valid_mask)
+        
+        # Convert Kelvin to Celsius (NO multiplication by 0.01)
+        img = img.subtract(273.15)
+
         url = img.getDownloadURL({
-            'scale': 500,
-            'crs': 'EPSG:4326',
+            'scale': 1000,
             'region': aoi,
             'format': 'GEO_TIFF'
         })
-        
-        # Download
-        response = requests.get(url)
+
+        response = requests.get(url, timeout=300)
         response.raise_for_status()
-        
-        # Lê o GeoTIFF
-        da = rioxarray.open_rasterio(BytesIO(response.content))
-        
-        # Adiciona metadata
-        da = da.squeeze()  # Remove dimensão de banda se for 1
-        da = da.expand_dims(time=[np.datetime64(date)])
-        da = da.rename('night_radiance')
-        da.attrs['long_name'] = 'VIIRS Nighttime Radiance'
-        da.attrs['units'] = 'nW/cm2/sr'
-        da.attrs['source'] = 'NASA/VIIRS/002/VNP46A2'
-        da.attrs['date'] = date
-        
-        # Nome do arquivo
-        filename = f"VIIRS_NIGHT_{date}_LAT_{lat_min}_to_{lat_max}_LON_{lon_min}_to_{lon_max}.nc"
+
+        filename = f"VIIRS_LST_{suffix}_{date}_LAT_{lat_min}_to_{lat_max}_LON_{lon_min}_to_{lon_max}.tif"
         filepath = os.path.join(output_dir, filename)
-        
-        # Salva como NetCDF
-        da.to_netcdf(filepath)
-        
-        # Verifica se o arquivo foi criado
+        with open(filepath, 'wb') as f:
+            f.write(response.content)
+
         if os.path.exists(filepath):
-            tamanho = os.path.getsize(filepath) / (1024 * 1024)  # MB
+            tamanho = os.path.getsize(filepath) / (1024 * 1024)
             print(f"  Salvo: {filename} ({tamanho:.2f} MB)")
+            convert_tif_to_netcdf(filepath, date)
             return True
         else:
             print(f"  Falha ao salvar: {filename}")
             return False
-        
     except Exception as e:
-        print(f"  Erro para {date}: {str(e)[:100]}")
+        print(f"  Erro para {date} ({suffix}): {str(e)[:100]}")
         return False
 
-def download_and_save_day(date):
-    """Download do MODIS day reflectance e salva como NetCDF individual"""
-    try:
-        start_date = ee.Date(date)
-        end_date = start_date.advance(1, 'day')
-        
-        # Obtém a imagem
-        img = ee.ImageCollection("MODIS/061/MOD09GA") \
-            .filterBounds(aoi) \
-            .filterDate(start_date, end_date) \
-            .select(['sur_refl_b01', 'sur_refl_b02', 'sur_refl_b03', 'sur_refl_b04']) \
-            .first() \
-            .clip(aoi)
-        
-        # Verifica se a imagem existe
-        if img is None:
-            print(f"  Sem dados para {date}")
-            return False
-        
-        # URL de download
-        url = img.getDownloadURL({
-            'scale': 500,
-            'crs': 'EPSG:4326',
-            'region': aoi,
-            'format': 'GEO_TIFF'
-        })
-        
-        # Download
-        response = requests.get(url)
-        response.raise_for_status()
-        
-        # Lê o GeoTIFF
-        da = rioxarray.open_rasterio(BytesIO(response.content))
-        
-        # Adiciona metadata
-        da = da.expand_dims(time=[np.datetime64(date)])
-        da = da.rename('surface_reflectance')
-        da.attrs['long_name'] = 'MODIS Surface Reflectance'
-        da.attrs['units'] = 'reflectance x 10000'
-        da.attrs['bands'] = '1:red, 2:nir, 3:blue, 4:green'
-        da.attrs['source'] = 'MODIS/061/MOD09GA'
-        da.attrs['date'] = date
-        
-        # Nome do arquivo
-        filename = f"MODIS_DAY_{date}_LAT_{lat_min}_to_{lat_max}_LON_{lon_min}_to_{lon_max}.nc"
-        filepath = os.path.join(output_dir, filename)
-        
-        # Salva como NetCDF
-        da.to_netcdf(filepath)
-        
-        # Verifica se o arquivo foi criado
-        if os.path.exists(filepath):
-            tamanho = os.path.getsize(filepath) / (1024 * 1024)  # MB
-            print(f"  Salvo: {filename} ({tamanho:.2f} MB)")
-            return True
-        else:
-            print(f"  Falha ao salvar: {filename}")
-            return False
-        
-    except Exception as e:
-        print(f"  Erro para {date}: {str(e)[:100]}")
-        return False
+# IDs de coleção
+day_collection = "NASA/VIIRS/002/VNP21A1D"
+night_collection = "NASA/VIIRS/002/VNP21A1N"
 
-# Processa imagens noturnas
-print("\nBaixando dados noturnos VIIRS...")
-night_success = []
-for date in dates:
-    print(f"\nProcessando data: {date}")
-    success = download_and_save_night(date)
-    if success:
-        night_success.append(date)
+# Processa todas as datas
+success_day = []
+success_night = []
 
-# Processa imagens diurnas
-print("\nBaixando dados diurnos MODIS...")
-day_success = []
 for date in dates:
-    print(f"\nProcessando data: {date}")
-    success = download_and_save_day(date)
-    if success:
-        day_success.append(date)
+    print(f"\nProcessando data: {date} (Daytime)")
+    if download_and_save(date, day_collection, "DAY"):
+        success_day.append(date)
+
+    print(f"\nProcessando data: {date} (Nighttime)")
+    if download_and_save(date, night_collection, "NIGHT"):
+        success_night.append(date)
 
 # Relatório final
 print("\n" + "="*50)
@@ -204,27 +147,28 @@ print("RELATÓRIO FINAL")
 print("="*50)
 print(f"Diretório de saída: {output_dir}")
 print(f"Total de datas solicitadas: {len(dates)}")
-print(f"Arquivos noturnos salvos: {len(night_success)}")
-print(f"Arquivos diurnos salvos: {len(day_success)}")
+print(f"Arquivos daytime salvos: {len(success_day)}")
+print(f"Arquivos nighttime salvos: {len(success_night)}")
 
-if night_success:
-    print("\nDatas noturnas com sucesso:")
-    print(", ".join(night_success[:10]))  # Mostra primeiras 10
-    if len(night_success) > 10:
-        print(f"... e mais {len(night_success) - 10} datas")
+if success_day:
+    print("\nDatas daytime com sucesso:")
+    print(", ".join(success_day[:10]))
+    if len(success_day) > 10:
+        print(f"... e mais {len(success_day) - 10} datas")
 
-if day_success:
-    print("\nDatas diurnas com sucesso:")
-    print(", ".join(day_success[:10]))
-    if len(day_success) > 10:
-        print(f"... e mais {len(day_success) - 10} datas")
-
-# Lista arquivos no diretório
-print("\nArquivos no diretório de saída:")
-arquivos = os.listdir(output_dir)
-nc_files = [f for f in arquivos if f.endswith('.nc')]
-for f in nc_files[:10]:  # Mostra primeiros 10
-    tamanho = os.path.getsize(os.path.join(output_dir, f)) / (1024 * 1024)
-    print(f"  {f} ({tamanho:.2f} MB)")
+if success_night:
+    print("\nDatas nighttime com sucesso:")
+    print(", ".join(success_night[:10]))
+    if len(success_night) > 10:
+        print(f"... e mais {len(success_night) - 10} datas")
 
 print("\nProcesso completo!")
+
+import sys
+
+# Suppress repeated sys.excepthook errors
+def silent_excepthook(exc_type, exc_value, exc_traceback):
+    # Simply print the exception once, no recursion
+    print(f"Uncaught exception: {exc_value}")
+
+sys.excepthook = silent_excepthook
