@@ -429,3 +429,6 @@ Para garantir que os pontos sejam iguais, usaremos a mesma precisão tanto no de
 Estamos tendo um pequeno problema quanto ao arredondamento das coordenadas geográficas
 
 Atualizações: o modelo detectou 15 focos de 30. Está com uma alta detecção de falsos verdadeiros de 215. Todos esses valores se devem por conta de úvens que também são anomalias. preciso pensar em formas de contornar esse problema.
+
+Atualmente estamos com uma precisão de 0.17, reall de 0.43 e f1-score de 0.25. É um avanço pequeno, mas ainda um avanço. Antes eu estava usando os pesos NVDI:1, BAI: 2, MIRBI: 2 e BT: 5. Isso fazia com que as nuvens também fossem detectadas. Alterei os pesos para NVDI:1, BAI: 3.75, MIRBI: 3.75 e BT: 1.5.
+De 30 incendios, uma média de 13 são detectados, 17 deixam de ser detctados e o modelo detecta 63 que não existem. Esses 63 são, aparentemente, pontos densos de nuvens. A estratégia agora é aumentar os dataset de 50 para 150 e avaliar os resultados.
