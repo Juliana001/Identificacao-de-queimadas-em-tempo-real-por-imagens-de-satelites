@@ -437,3 +437,6 @@ Ao aumenta a quantidade de dados, o modelo diminuiu o f1 score: com 140 atingiu 
 Tirando os dados de setembro e outrubro atingimos um f1 score de 0.31 e um recall de 0.37
 
 Foi possível atingir o melhor patamar de métricas com f1 score de 0.48, recall de 0.37 e precision de 0.69. Pelo ground truth é possível perceber que tem um grupo de incêndios que o modelo nbão está detectando. Agora temos que entender qual é o comportamento desses incendios para ver porque não é possível detecta-lo. O modelo está estável consumindo cerca de 6Gb de ram.
+
+_______________________________________________________________________________________________________________________________________________________________________________
+A abordagem utilizada até agora se mostrou pouco eficiente. Observando a distribuição de focos de incêndio durante os meses no cerrado goiano, pude observar que de maio até outubro tem pelo menos um foco todo dia. A abordagem proposta para melhorar o desempenho do modelo é retirar todos os dados dos dias com incendios e, como a resolução temporal do Goes-19 é de 10 minutos, inserir mais dados dos dias sem incêndio para tentar melhorar o desempenho geral do modelo.
