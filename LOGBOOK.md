@@ -442,3 +442,6 @@ ________________________________________________________________________________
 A abordagem utilizada até agora se mostrou pouco eficiente. Observando a distribuição de focos de incêndio durante os meses no cerrado goiano, pude observar que de maio até outubro tem pelo menos um foco todo dia. A abordagem proposta para melhorar o desempenho do modelo é retirar todos os dados dos dias com incendios e, como a resolução temporal do Goes-19 é de 10 minutos, inserir mais dados dos dias sem incêndio para tentar melhorar o desempenho geral do modelo.
 
 A média do F1-score de uns 20 dias de treino é de aproximadamente 0.1, minha intenção é conseguir um f1-score superior a 0.65 para a entrega final.
+
+
+Consegui mudar os dados para dias sem nenhum tipo de foco de incêndio, mas houve atualização em uma ou duas bibliotecas. Agora eu preciso identificar exatamente o que atualizou para tentar consertar. O ideal seria montar uma VM para não precisar sempre ter este tipo de problema, mas minha máquina não suporta o modelo. Vou avaliar a melhor decisão.
